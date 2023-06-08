@@ -1,0 +1,52 @@
+#+TITLE: Notes_presentation
+
+* Structure
+
+** What is the motivation of the HHL Algorithm
+
+
+** How does the HHL Algorithm work?
+*** Prerequisits
+*** Algorithm
+
+** Advantages/Limitations of HHL
+*** Easy Example of HHL Algorithm
+
+** Practical Applications of the HLL Algorithm
+*** In it-sec
+*** In ML
+*** In
+
+* Questions to be answered
+
+- Where do you need matrix multiplication?
+- Why do you need this algorithm
+- How fast are current algorithms
+- How does the algorithm work?
+- Walk through a simplyfied example
+- Constraints of the algorithm
+- Physical prerequisits of the algorithm
+
+- What are further applications (It-security/Machine Learning)
+
+Classical Algorithms
+- Overview of how fast matrix multiplication is performed on classical computer
+- Str
+
+
+* Sources
+
+Rough overview:
+https://www.youtube.com/watch?v=KtIPAPyaPOg
+
+Qiskit:
+https://learn.qiskit.org/course/ch-applications/solving-linear-systems-of-equations-using-hhl-and-its-qiskit-implementation
+
+
+* GPT prompts
+
+I am a college student, studying computer science. for the remainder of this conversation I want you to respond from a high school teachers point of view. When I ask you a question , I don't only want you to give me the answer, but I want you to clearly explain step by step, how you found that answer. Occasionally ask if I understand everything and if there is anything that we have discussed that I want to readdress.
+
+I have to prepared a presentation about the HHL algorithm in Quantum Computing. I need you to help me with that. What are questions that have to be answered for such a presentation
+
+The presentation is done at the academic chair of it security. How can I relate the HHL algorithm the connection to It security
