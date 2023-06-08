@@ -2,20 +2,64 @@
 
 * Structure
 
+
 ** What is the motivation of the HHL Algorithm
 
 
 ** How does the HHL Algorithm work?
-*** Prerequisits
+*** Mathmatical Prerequisits
+- Hermetian Matrix
+- QPE
+
 *** Algorithm
+1) Load data
+2) Apply QPE
+3) Add auxiliary qubit
+4) Apply $QPE^t$
+5) Measury auxiliary Qubit
+6) Apply observabel $M$ to calculate $F(x):= <x|M|x>$.
+
+*** Easy Example of HHL Algorithm
+-> Qiskit Example
 
 ** Advantages/Limitations of HHL
-*** Easy Example of HHL Algorithm
+*** Physical Prerequisits
+*** Mathematical advantages
+*** Error correction?
+*** Runtime advantage
+
+
+
 
 ** Practical Applications of the HLL Algorithm
 *** In it-sec
 *** In ML
-*** In
+
+* GPT Structure
+1. What is the motivation behind the HHL algorithm?
+   - Start by explaining why the HHL (Harrow-Hassidim-Lloyd) algorithm was developed and what problems it aims to solve.
+   - Highlight the potential impact of the algorithm in various fields, such as solving systems of linear equations efficiently, which has applications in areas like optimization, machine learning, and cryptography.
+
+2. How does the HHL algorithm work at a high level?
+   - Explain the basic steps of the algorithm, providing an overview of the key concepts and techniques involved.
+   - Discuss the key components, such as quantum phase estimation, linear system encoding, and quantum measurement.
+
+3. What are the prerequisites for implementing the HHL algorithm?
+   - Discuss the requirements for using the HHL algorithm, such as the need for a quantum computer and certain quantum gates (e.g., controlled rotations) to perform the necessary operations.
+   - Mention the importance of error correction and quantum coherence to ensure accurate results.
+
+4. What are the advantages and limitations of the HHL algorithm?
+   - Highlight the advantages of the HHL algorithm compared to classical methods for solving linear systems, such as its potential for exponential speedup.
+   - Discuss the current limitations of the algorithm, such as the sensitivity to noise and the requirement for a large number of qubits.
+
+5. Can you provide a step-by-step example of the HHL algorithm?
+   - Walk through a simplified example of the HHL algorithm, explaining each step in detail.
+   - Use a simple linear system of equations to demonstrate how the algorithm works and how it can be implemented.
+
+6. What are some current research and practical applications of the HHL algorithm?
+   - Discuss the ongoing research in improving the efficiency and scalability of the algorithm.
+   - Explore real-world applications where the HHL algorithm can be utilized, such as simulating quantum systems, optimizing financial portfolios, or solving large-scale optimization problems.
+
 
 * Questions to be answered
 
