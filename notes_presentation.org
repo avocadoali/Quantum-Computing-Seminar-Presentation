@@ -1,5 +1,38 @@
 #+TITLE: Notes_presentation
 
+State Preperation
+Quantum Phase Estimation
+Ancilla Bit Rotation - add auxiliary qubit
+Inverse Quantum Phase Estimation
+Measurement
+
+Measury auxiliary Qubit
+Apply observabel M to calculate F(x):= <x|M|x>
+* Todo
+- Is list complete?
+- Work out all the points
+- ....
+- Make the presentation
+
+
+
+* Sub points
+** The Algorithm
+- Input Preparation:
+  - Specify the input of the algorithm, which includes the coefficient matrix A, the right-hand side vector b, and the desired precision for the solution.
+- Quantum State Preparation:
+  - Prepare an initial quantum state that encodes the information of the input vector b. This step typically involves applying suitable quantum gates to initialize the quantum register.
+- Quantum Phase Estimation (QPE):
+  - Perform the quantum phase estimation procedure to estimate the eigenvalues of the matrix A. QPE utilizes controlled operations and quantum Fourier transforms to extract the eigenvalue information.
+- Eigenvalue Inversion:
+  - Invert the estimated eigenvalues obtained from the QPE step. This inversion is performed classically by manipulating the classical register.
+- Conditional Rotation:
+  - Apply conditional rotations based on the inverted eigenvalues to modify the quantum state. This step allows for the extraction of information about the solution of the linear system.
+- Measurement and Post-processing:
+  - Perform measurements on the quantum register to obtain the desired solution. The post-processing step involves classical computations and calculations using the measurement outcomes to obtain the final solution vector.
+
+
+
 * Structure
 
 1) QC introduction Motivation of the HHL Algorithm
@@ -19,6 +52,14 @@
    - How do gates work?
 
 3) The Algorithm
+   Load data
+   Apply QPE
+   Add auxiliary qubit
+   Apply $QPE^t$
+   Measury auxiliary Qubit
+   Apply observabel $M$ to calculate $F(x):= <x|M|x>$.
+
+
    - Load data
    - Apply QPE
    - Add auxiliary qubit
@@ -44,7 +85,6 @@
    - Ml
 
 7) Sources
-
 
 * GPT Structure 2)
 1. Introduction:
@@ -82,12 +122,6 @@
 9. Conclusion:
    - Recap the main points covered in the presentation, emphasizing the significance of the HHL algorithm in the context of quantum computing and its potential impact on various fields.
    - Encourage further exploration of the topic and highlight the importance of keeping up with advancements in quantum computing for computer science students.
-
-Throughout the presentation, use visuals, diagrams, and animations to aid understanding and provide concrete examples whenever possible. You can also consider incorporating interactive elements, such as demonstrations or simulations, to engage the audience and enhance their understanding of the HHL algorithm.
-
-Remember to tailor your explanations to the level of your audience, assuming a basic understanding of computer science concepts. Provide references or additional resources for students who want to delve deeper into the topic.
-
-By following this structure and addressing the topics and methods mentioned, you can deliver a comprehensive and engaging presentation on the HHL algorithm in quantum computing, specifically tailored for computer science students.
 
 * GPT Structure 1)
 1. What is the motivation behind the HHL algorithm?
