@@ -1,5 +1,215 @@
 #+TITLE: Notes_presentation
 
+We now Rotate the ancilla qubit:
+$$ |Ψ_5⟩ = \sum_{j=0}^{2^{1}−1} b_j |u_j⟩ | \widetilde{λ}_j⟩ (\sqrt{1-\frac{C^2}{\widetilde{λ}_j^2}}|0⟩ + \frac{C}{\widetilde{λ}_j} |1⟩) \\ =-\frac{1}{\sqrt{2}}|u_0⟩ |01⟩\left(\sqrt{1-\frac{1}{1^2}}|0⟩ + \frac{1}{1} |1⟩\right) +\frac{1}{\sqrt{2}}|u_1⟩ |10⟩ \left(\sqrt{1-\frac{1}{2^2}}|0⟩ + \frac{1}{2} |1⟩\right)$$
+
+Lets say we measure $\ket{1}$ in the ancilla qubit, then:
+$$ |Ψ_6⟩ =\sqrt{\frac{8}{5}}\left(-\frac{1}{\sqrt{2}}|u_0⟩|01⟩|1⟩ +\frac{1}{2\sqrt{2}}|u_1⟩ |10⟩ |1⟩\right) $$
+
+
+* Easy example
+
+
+
+
+**INIT**
+
+
+
+A = \begin{pmatrix}
+1 & -\frac{1}{3}\\
+-\frac{1}{3} & 1\\
+\end{pmatrix}
+
+
+\vec{u_1} = \begin{pmatrix}
+ \frac{-1}{\sqrt{2}}\\
+ \frac{1}{\sqrt{2}}\\
+\end{pmatrix}
+
+\vec{u_0} = \begin{pmatrix}
+ \frac{-1}{\sqrt{2}}\\
+ \frac{-1}{\sqrt{2}}\\
+\end{pmatrix}
+
+
+λ_0 = \frac{2}{3}
+λ_1 = \frac{4}{3}
+
+\widetilde{λ_0} =\frac{4*\frac{2}{3}*\frac{3\pi}{4}}{2 \pi}
+=\frac{4*2*3\pi}{3*4* 2 \pi} = 1
+
+
+
+\widetilde{λ_1} =\frac{4*\frac{4}{3}*\frac{3\pi}{4}}{2 \pi}
+=\frac{4*4*3\pi}{3*4* 2 \pi} = 1
+
+4\frac{2}{3}/2π
+
+\vec{x} = \begin{pmatrix}
+ \frac{3}{8}\\
+ \frac{9}{8}\\
+\end{pmatrix}
+
+| x_0|^2 = \frac{9}{64}
+|x_1|^2 = \frac{81}{64}
+
+
+\frac{ |x_0|^2}{ |x_1|^2}=
+\frac{\frac{9}{64}}{\frac{81}{64}} = \frac{1}{9}
+
+
+
+= log_2(2^n)
+
+ Ψ_0⟩ = |0⟩_b  |00⟩_n  |0⟩_a =  |0000⟩
+
+
+
+\vec{b} =
+\begin{pmatrix}
+ 0\\
+ 1\\
+\end{pmatrix}
+<=>
+\ket{b} =
+0 \ket{0} 1 \ket{1} = \ket{1}
+
+|
+Ψ2⟩ = I ⊗ H^{⊗n} ⊗ I |Ψ1⟩
+Ψ3⟩ = \frac{1} {2 \sqrt{2}} ((− |u0⟩ + |u1⟩) |00⟩ + (−i |u0⟩ − |u1⟩) |01⟩ + (|u0⟩ + |u1⟩) |10⟩ + (i |u0⟩ − |u1⟩) |11⟩) |0⟩
+
+Ψ4⟩ = IQFT |Ψ3⟩
+\\= \frac{1}{4\sqrt{2}}
+\left(
+    \left(− |u_0⟩ + |u_1⟩\right)
+    \left(|00⟩ + |01⟩ + |10⟩ + |11⟩\right)
+\\
+    + \left(−i |u_0⟩ − |u_1⟩\right)
+    \left(|00⟩ − i |01⟩ − |10⟩ + i |11⟩\right)
+\\
+    + \left(|u_0⟩ + |u_1⟩\right)
+    \left(|00⟩ − |01⟩ + |10⟩ − |11⟩\right)
+\\
+
+    + \left(i |u_0⟩ − |u_1⟩\right)
+    \left(|00⟩ + i |01⟩ − |10⟩ − i |11⟩\right)
+\right)|0⟩
+
+|Ψ_5⟩ =
+\sum_{j=0}^{2^{1}−1} b_j |u_j⟩ | \widetilde{λ}_j⟩ (\sqrt{1-\frac{C^2}{\widetilde{λ}_j^2}}|0⟩ + \frac{C}{\widetilde{λ}_j} |1⟩) \\ =
+
+
+-\frac{1}{\sqrt{2}}|u_0⟩ |01⟩\left(\sqrt{1-\frac{1}{1^2}}|0⟩ + \frac{1}{1} |1⟩\right) +\frac{1}{\sqrt{2}}|u_1⟩ |10⟩ \left(\sqrt{1-\frac{1}{2^2}}|0⟩ + \frac{1}{2} |1⟩\right)
+
+=-\frac{1}{\sqrt{2}}|u_0⟩ |01⟩\left(\sqrt{0}|0⟩ + \frac{1}{1} |1⟩\right)
++\frac{1}{\sqrt{2}}|u_1⟩ |10⟩ \left(\sqrt{1-\frac{1}{4}}|0⟩ + \frac{1}{2} |1⟩\right)
+
+
+\\=-\frac{1}{\sqrt{2}}|u_0⟩ |01⟩\left(|0⟩ +|1⟩\right)
++\frac{1}{\sqrt{2}}|u_1⟩ |10⟩ \left(\sqrt{1-\frac{1}{4}}\ |0⟩ + \frac{1}{2} |1⟩\right)
+
+\\=-\frac{1}{\sqrt{2}}|u_0⟩ |01⟩(|1⟩)+\frac{1}{\sqrt{2}}|u_1⟩ |10⟩ \left(\frac{1}{2}|1⟩\right)
+
+
+\ket{x} =  A^{-1} \ket{b}
+\\=
+
+
+\sum_{i=0}^{2^{1}-1}
+\lambda_i^{-1} b_i\ket{u_i}
+\\=  -\frac{1}{\frac{2}{3}\sqrt{2}}|u_0⟩ +\frac{1}   {\frac{4}{3}\sqrt{2}} |u_1⟩
+
+
+\\= \lambda_0^{-1} b_0\ |u_0⟩ +  \lambda_1^{-1} b_1\ket{u_1}
+\\=  -\frac{1}{\frac{2}{3}\sqrt{2}}|u_0⟩ +\frac{1}   {\frac{4}{3}\sqrt{2}} |u_1⟩
+
+
+
+
+**QPE**
+
+Ψ4⟩ = IQFT |Ψ3⟩ \\= \frac{1}{4\sqrt{2}} \left(\left(− |u_0⟩ + |u_1⟩\right) \left(|00⟩ + |01⟩ + |10⟩ + |11⟩\right) \\ + \left(−i |u_0⟩ − |u_1⟩\right) \left(|00⟩ − i |01⟩ − |10⟩ + i |11⟩\right) \\ + \left(|u_0⟩ + |u_1⟩\right) \left(|00⟩ − |01⟩ + |10⟩ − |11⟩\right) \\ + \left(i |u_0⟩ − |u_1⟩\right) \left(|00⟩ + i |01⟩ − |10⟩ − i |11⟩\right) \right)|0⟩
+
+=\frac{1}{\sqrt{2}}(− |u_0⟩ |01⟩ + |u_1⟩ |10⟩) |0⟩
+
+= |Ψ_4⟩=\left(−\frac{1}{\sqrt{2}} |u_0⟩ |01⟩ +\frac{1}{\sqrt{2}}  |u_1⟩ |10⟩\right) |0⟩
+
+
+$$b_0 =\frac{-1}{\sqrt{2}}
+$$b_1 =\frac{1}{\sqrt{2}}
+
+
+
+= |Ψ_4⟩=\left(−\frac{1}{\sqrt{2}} |u_0⟩ |\widetilde{λ}_0⟩ +\frac{1}{\sqrt{2}}  |u_1⟩ |\widetilde{λ}_1⟩ \right) |0⟩
+
+
+
+−1
+√
+2
+and b1 =
+1
+√
+2.
+
+
+It can be seen that after IQFT, the eigenvalues are
+encoded in the clock qubits as |01⟩ and |11⟩ with non-
+zero amplitudes due constructive interference. b_0 = \frac{−1}{\sqrt{2}}
+and b_1 = \frac{1}{\sqrt{2}}. We clearly see the entanglement between
+the b-register and the c-register that |u0⟩ goes with |01⟩
+and |u1⟩ goes with |11⟩.
+
+c-register: |u_0⟩ or |u_1⟩
+b-register encode the eigenvalues: |01⟩ or |10⟩
+ancillary qubit: |0⟩
+
+We can cleary see entanglement here:
+-|u_0⟩ |01⟩ and |u1⟩|10⟩
+
+
+**Ancilla**
+
+|Ψ5⟩ =
+\sum_{j=0}^{2^{1}−1}
+b_j |u_j⟩ | \widetilde{λ}_j⟩
+(\sqrt{1-\frac{C^2}{\widetilde{λ}_j^2}}|0⟩ + \frac{C}{\widetilde{λ}_j} |1⟩)
+
+=-\frac{1}{\sqrt{2}}|u_0⟩ |01⟩\left(\sqrt{1-\frac{1}{1^2}}|0⟩ + \frac{1}{1} |1⟩\right) +\frac{1}{\sqrt{2}}|u_1⟩ |10⟩ \left(\sqrt{1-\frac{1}{2^2}}|0⟩ + \frac{1}{2} |1⟩\right)
+
+=\frac{-1}{\sqrt{2}}|u_1⟩ |10⟩) |0⟩
+b_j |u_j⟩ | \widetilde{λ}_j⟩
+(\sqrt{1-\frac{C^2}{\widetilde{λ}_j^2}}|0⟩ + \frac{C}{\widetilde{λ}_j} |1⟩)
+
+|Ψ6⟩ =
+=\sqrt{\frac{8}{5}}\left(-\frac{1}{\sqrt{2}}|u_0⟩|01⟩|1⟩ +\frac{1}{2\sqrt{2}}|u_1⟩ |10⟩ |1⟩\right)
+
+**IPQE**
+
+| Ψ_9⟩ =
+=\frac{2}{3}\sqrt{\frac{8}{5}}
+\left(
+    -\frac{1}{\frac{2}{3}\sqrt{2}}|u_0⟩ +\frac{1}{\frac{4}{3}\sqrt{2}} |u_1⟩
+\right) |00⟩ | 1⟩
+
+$$|u_0⟩ = \frac{-1}{\sqrt{2}}|0⟩ + \frac{-1}{\sqrt{2}}|1⟩$$
+$$|u_1⟩ = \frac{-1}{\sqrt{2}}|0⟩ + \frac{1}{\sqrt{2}}|1⟩$$
+
+c_{|u_0⟩}=\left|\frac{1}{2}\sqrt{\frac{2}{5}}*1\right|^2 = \frac{1}{20}
+c_{|u_1⟩}=\left|\frac{1}{2}\sqrt{\frac{2}{5}}*3\right|^2 = \frac{9}{20}
+| Ψ_9⟩ =
+\frac{1}{2}\sqrt{\frac{2}{5}}
+\left( |0⟩ + 3|1⟩
+\right) |00⟩ | 1⟩
+The probability ratio of obtaining |0⟩ and |1⟩ when
+b-register is measured is thus 1 : 9 as expected
+
+
+
+
+* The algorithm
+
 |Ψ9⟩ =
 \frac {1} {\sqrt{\sum_{j=0}^{2^{n_b}−1} | \frac{b_j} {\widetilde{λ}_j}|2}}
  \frac{b_j} {λ_j}
@@ -7,6 +217,7 @@
 \\ =
 
 \frac {1} {\sqrt{\sum_{j=0}^{2^{n_b}−1} | \frac{b_j} {\widetilde{λ}_j}|2}}
+Meaning we need 1 qubit to represent b⃗b
 | x⟩_b | 0⟩^{⊗n}_c | 1⟩_a
 
 |Ψ9⟩ =

@@ -24,12 +24,13 @@ $$
 Say A has the eigenvalues $\lambda_1,  \lambda_2 …  \lambda_n$, then
 
 $$
-D = \begin{bmatrix}
+A = \begin{pmatrix}
 \lambda_1 & 0 & 0 & 0\\
- 0 & \lambda_2 &0 & 0\\
- 0 & 0 & ... & 0\\
- 0 & 0 & 0& \lambda_n \\
-\end{bmatrix}
+ 0 & \lambda_2 &0 & 0\\
+ 0 & 0 & ... & 0\\
+ 0 & 0 & 0& \lambda_n \\
+\end{pmatrix}
+
 $$
 
 Say A has eigenvectors of A $\vec{x_1},\vec{x_2},…,\vec{x_n}$, then
@@ -152,4 +153,4 @@ $$
 U^H = e^{iH}
 $$
 
-Sidenote: All quantum gates is represented as an unitary matrix
+Sidenote: All quantum gates is represented as an unitary matrixxx

@@ -1,8 +1,40 @@
 # HHL-Algorithm
 
-## HHL Step-by-Step
+## Short overview
+
+We have 5 Phases:
+
+1. State Preparation
+2. Quantum Phase Estimation
+3. Ancilla Bit Rotation - add auxiliary qubit
+4. Inverse Quantum Phase Estimation
+5. Measurement
+
+This is the quantum circuit we will be working with:
 
 ![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled.png)
+
+We are working with 3 sets of inputs
+
+1. a-register
+    - “helper” qubit
+    - shows if states are entangled - if yes then recalculated until valid solution is found
+2. c-register
+    - relates to time (clock) in the controlled rotation in the QPE part
+    - it will store the eigenvalues (more specifically the phases of the eigenvalues)
+    - need n qubits (n being the number of rows of A)
+3. b-register 
+    - This encodes the b vector into |b> which
+    - In the end this will contain our solution for vector x
+    - need log_2(n) qubits
+
+You are probably wondering where A is used. A is a Hamiltonian matrix which can be encoded as the Hamiltonian of a unitary gate in the QPE phase.
+
+LSB: least significant bit
+
+MSB: most significant bit
+
+## The Algorithm Step-By-Step
 
 ### State preparation
 
@@ -18,13 +50,20 @@ $$
 
 Now we $\vec{b}$ will be encoded as a quantum state $\ket{b}$, by having the amplitudes correspond to the elements of $\vec{b}$. 
 
-![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%201.png)
-
 $$
 |Ψ1⟩ = |b⟩_b\ |0...0⟩_c\ |0⟩_a
 $$
 
+![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%201.png)
+
 ### Quantum Phase Estimation
+
+We already extensively heard of the QPE today. What we can basically achieve is that we can estimate the phases of the eigenvalues of a unitary rotation matrix $U=e^{i \theta}$ which are proportional to the actual eigenvalues.
+We will later see that we can also determine the eigenvectors as well.
+
+For the HHL algorithm we will encode $A$ into our unitary $U$. Because $A$ is Hermitian, its unitary is $U = e^{iAt}$. This way can obtain an estimation of the Eigenvalues of $A$.
+
+We apply Quantum Phase Estimation to obtain the eigenvalues of A. 
 
 $$
 |Ψ_4⟩ =\sum_{j=0}^{2^{n_b}−1}
@@ -47,7 +86,7 @@ $|u_j⟩$ := eigenvectors of A
 
 ### Inversion of the eigenvalues and measurement of the ancilla qubit
 
-We now have to rotate the ancilla bit $|0⟩_a$, based on the encoded eigenvalues $| \widetilde{λ}_j⟩$ with a constant $C$. Ancilla qubit is measured and will collapse to either $\ket{0}$ or $\ket{1}$.
+We now have to rotate the ancilla bit $|0⟩_a$, based on the encoded eigenvalues $| \widetilde{λ}_j⟩$ with a constant $C$. The ancilla qubit is measured and will collapse to either $\ket{0}$ or $\ket{1}$.
 
 - $\ket{0}$: result will be discarded, computation will be repeated
     - this is called amplitude amplification (like grover)
@@ -71,7 +110,7 @@ $$
 Measure the ancilla qubit
 
 $$
-|Ψ6⟩ = \frac {1} {\sqrt{\sum_{j=0}^{2^{n_b}−1} | \frac{b_jC} {\widetilde{λ}_j}|2}}
+|Ψ6⟩ = \frac {1} {\sqrt{\sum_{j=0}^{2^{n_b}−1} | \frac{b_jC} {\widetilde{λ}_j}|^2}}
 
 \sum_{j=0}^{2^{n_b}−1} b_j |u_j⟩ | \widetilde{λ}_j⟩ \frac{C}{\widetilde{λ}_j} |1⟩_a
 
@@ -81,7 +120,7 @@ $$
 \ket{x} =  A^{-1} \ket{b} 
 = 
 \sum_{i=0}^{2^{n_b}-1} 
-\lambda_i^{-1} b_j\ket{u_j}
+\lambda_i^{-1} b_i\ket{u_i}
 $$
 
 Resembles our answer. We can only obtain the correct result if the b-register is
@@ -98,18 +137,25 @@ TODO Why is something entangled??
 
 $$
 |Ψ9⟩ =
-\frac {1} {\sqrt{\sum_{j=0}^{2^{n_b}−1} | \frac{b_jC} {\widetilde{λ}_j}|2}}
-\sum_{j=0}^{2^{n_b}−1} \frac{b_jC} {λ_j} |u_j⟩ |0⟩^{⊗n} |1⟩_a
+\frac {1} {\sqrt{\sum_{j=0}^{2^{n_b}−1} | \frac{b_jC} {λ_j}|2}}
+\sum_{j=0}^{2^{n_b}−1}\frac{ C}{λ_j}   b_j |u_j⟩ |0⟩^{⊗n} |1⟩_a
 \\ =
 
-\frac {C} {\sqrt{\sum_{j=0}^{2^{n_b}−1} | \frac{b_jC} {\widetilde{λ}_j}|2}}
+\frac {C} {\sqrt{\sum_{j=0}^{2^{n_b}−1} | \frac{b_jC} {λ_j}|2}}
 | x⟩_b | 0⟩^{⊗n}_c | 1⟩_a
 
 $$
 
+$$
+\ket{x} =  A^{-1} \ket{b} 
+\\= 
+\sum_{i=0}^{2^{n_b}-1} 
+\lambda_i^{-1} b_i\ket{u_i}
+$$
+
 After performing IQPE the c-register is reset to 0 again and the b-register stores |x⟩.
 
-If C is real and because of the normalisation of the eigenvectors.
+If C is real and considering the normalization of the eigenvectors then:
 
 $$
 |Ψ9⟩ =
@@ -131,80 +177,14 @@ $$
 | λ^{−1}_i b_i |^2 = 1
 $$
 
-## Short overview
-
-We have 5 Phases:
-
-1. State Preparation
-2. Quantum Phase Estimation
-3. Ancilla Bit Rotation - add auxiliary qubit
-4. Inverse Quantum Phase Estimation
-5. Measurement
-
-This is the quantum circuit we will be working with:
-
-![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%202.png)
-
-We are working with 3 sets of inputs
-
-1. a-register
-    - “helper” qbit
-    - shows if states are entangled - if yes then recalculated until valid solution is found
-2. c-register
-    - relates to time (clock) in the controlled rotation in the QPE part
-3. b-register 
-    - This encodes the b vector into |b> which
-    - In the end this will contain our solution for vector x
-
-You are probably wondering where A is used. A is a Hamiltonian matrix which can be encoded as the Hamiltonian of a unitary gate in the QPE phase.
-
-LSB: least significant bit
-
-MSB: most significant bit
-
-## The Algorithm
-
-### State Preparation
-
-1. At first all states are zero $n_b + n + 1$
-2. $\vec{b}$ will be encoded as a quantum state $\ket{b}$, by having the amplitudes correspond to the elements of $\vec{b}$.
-
-![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%203.png)
-
-![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%204.png)
-
-### QPE
-
-We already extensively heard of the QPE today. What we basically can achieve is that we can estimates the phase of the eigenvalues of the unitary rotation matrix $U=e^{i \theta}$. These are proportional to the Eigenvalues of the rotation $\theta$.
-
-We will later see that we can also determine the eigenvectors as well
-
-For the HHL Algorithm we will encode $A$ into our unitary $U$. Because $A$ is Hermitian, its unitary is $U = e^{iAt}$. This way can obtain an estimation of the Eigenvalues of $A$.
-
-### Rotation/inversion of Eigenvalues on basis of ancilla qubit
-
-Ancilla qubit is measured and will collapse to either $\ket{0}$ or $\ket{1}$.
-
-- $\ket{0}$: result will be discarded, computation will be repeated
-    - this is called amplitude amplification (like grover)
-    - we have entangled qubits
-- $\ket{1}$: result is accepted
-
-Here we invert the Eigenvalues so that we can use them later to calculate $A^{-1}$
-
-### IQPE
-
-Reverse the IQPE to achieve the result
+The result is now stored in $|x⟩_b$.
 
 ### Measurement
 
-The problem here is that the solution here cant be read out the exact entries of $\ket{x}$ , as $\ket{x}$ only has $\log_2N$  qubits/entries, whereas  $\vec{b}$ as $N$ entries.
+$|x⟩_b$ can’t be read out classically as it only contains $log_2(n)$ entries.
 
-We have to measure it by using an $M$ to observe the properties of $\ket{x}$. 
-
-$$
-F(x) := \bra{x}M\ket{x}
-$$
+But we make a measurement M whose expectation value ⟨x| M |x⟩ corresponds to
+the feature of $\vec{x}$ that we wish to evaluate. We basically just get a ratio of the element of $\vec{x}$.
 
 ## Mathematical Summary
 
@@ -325,21 +305,21 @@ $$
 
 ### State Preperation
 
-![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%205.png)
+![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%202.png)
 
 ### Quantum Phase Estimation
 
-![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%206.png)
+![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%203.png)
 
 ### Ancilla Bit Rotation - add auxiliary qubit
 
-![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%207.png)
+![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%204.png)
 
 The linear mapping operation is not unitary and thus will require a number of repetitions as it has some probability of failing.
 
 ### Inverse Quantum Phase Estimation
 
-![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%208.png)
+![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%205.png)
 
 ### Measurement
 
@@ -383,7 +363,7 @@ $$
 
 ### Invert Eigenvalues
 
-![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%209.png)
+![Untitled](HHL-Algorithm%207ba46b86df47407a92db5fb10bb1ebb8/Untitled%206.png)
 
 ### Apply IQPE
 

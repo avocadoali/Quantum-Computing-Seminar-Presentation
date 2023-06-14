@@ -76,9 +76,9 @@ $$
 $$
 
 $$
-\ket{4} = \ket{100} = \ket{0} \otimes \ket{0} \otimes \ket{0}= \begin{pmatrix}
-1 \\
-0 
+\ket{4} = \ket{100} = \ket{1} \otimes \ket{0} \otimes \ket{0}= \begin{pmatrix}
+0 \\
+1 
 \end{pmatrix}
 \otimes
 \begin{pmatrix}
