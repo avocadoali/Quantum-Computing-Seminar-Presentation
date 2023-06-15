@@ -235,6 +235,8 @@ $$
 
 $$
 
+### Measurement
+
 To get the probability of $|u_0⟩$ and $|u_1⟩$ we have to square their coefficients
 
 $$

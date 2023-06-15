@@ -154,3 +154,7 @@ U^H = e^{iH}
 $$
 
 Sidenote: All quantum gates is represented as an unitary matrixxx
+
+**Inner product**
+
+ ⟨x| M |x⟩

@@ -1,5 +1,22 @@
 #+TITLE: Notes_presentation
 
+
+
+
+
+
+
+
+- Importance of solving linear equations
+  - Optimization
+  - Machine Learning
+  - Cryptography
+  - Scientific Computing
+  - Simulating Quantum Systems
+- What does the HHL Algorithm Promise?
+- potential advantages over classical computers
+
+
 We now Rotate the ancilla qubit:
 $$ |Ψ_5⟩ = \sum_{j=0}^{2^{1}−1} b_j |u_j⟩ | \widetilde{λ}_j⟩ (\sqrt{1-\frac{C^2}{\widetilde{λ}_j^2}}|0⟩ + \frac{C}{\widetilde{λ}_j} |1⟩) \\ =-\frac{1}{\sqrt{2}}|u_0⟩ |01⟩\left(\sqrt{1-\frac{1}{1^2}}|0⟩ + \frac{1}{1} |1⟩\right) +\frac{1}{\sqrt{2}}|u_1⟩ |10⟩ \left(\sqrt{1-\frac{1}{2^2}}|0⟩ + \frac{1}{2} |1⟩\right)$$
 

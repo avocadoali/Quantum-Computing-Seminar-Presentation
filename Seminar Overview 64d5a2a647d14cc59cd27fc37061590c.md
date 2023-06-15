@@ -20,16 +20,14 @@
     
     [Easy Example of the HHL Algorithm](Seminar%20Overview%2064d5a2a647d14cc59cd27fc37061590c/Easy%20Example%20of%20the%20HHL%20Algorithm%200931b27ab8b14682bc18b99dc0594415.md)
     
-5. **Advantages/Limitations of HHL**
+5. **Evaluation/Advantages/Limitations of HHL**
     
-    [Physical and mathematical constraints/prerequisites (How many qbits are needed, What form do the vectors have to be?)](Seminar%20Overview%2064d5a2a647d14cc59cd27fc37061590c/Physical%20and%20mathematical%20constraints%20prerequisite%20ff4cefecdc054bdeb3d2a065f41bcfe5.md)
+    [Evaluation](Seminar%20Overview%2064d5a2a647d14cc59cd27fc37061590c/Evaluation%20ff4cefecdc054bdeb3d2a065f41bcfe5.md)
     
-    - Show the runtime advantages in Graphs (→Paper)
-    - Error correction, noise and accuracy
 6. **Practical Applications of the HHl Algorithm/Future Outlooks**
-    - It-sec
-    - Ml
-    - HHL without ancilla
+    
+    [Applications/Future Outlook](Seminar%20Overview%2064d5a2a647d14cc59cd27fc37061590c/Applications%20Future%20Outlook%205418ace063c54459b68f2bc901d418b8.md)
+    
 7. **Sources**
 
 ### Scrap

@@ -126,6 +126,8 @@ $$
 Resembles our answer. We can only obtain the correct result if the b-register is
 measured in the eigenvector basis (i.e. $|u_j⟩$ instead of  |0⟩/|1⟩ ).
 
+The eigenvalues are now inverted.
+
 However, the b-register is entangled with the clock qubits, $| \widetilde{λ}_j⟩$.
 
 This means that we cannot factorize the result into a tensor product of the c-register and b-

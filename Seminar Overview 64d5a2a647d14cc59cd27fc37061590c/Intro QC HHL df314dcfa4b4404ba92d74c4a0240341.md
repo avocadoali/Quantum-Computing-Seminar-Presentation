@@ -1,15 +1,12 @@
 # Intro QC/HHL
 
-## Short introduction to QC
-
-- potential advantages over classical computers
-
 ## Why do we want to use the HHL
 
 - Importance of solving linear equations
-    - Optimization
-    - Machine Learning
-    - Cryptography
-    - Scientific Computing
-    - Simulating Quantum Systems
+    - Linear systems are basically everywhere
+    - processing terabyte/petabytes of data for optimization or ml
+    - even approximation with classical computers of linear equations of N unknowns needs at least N time steps
+    
 - What does the HHL Algorithm Promise?
+    - HHL promises exponential speedup!! log(N)
+    - 1mio steps → 6 steps (GRAPH)
