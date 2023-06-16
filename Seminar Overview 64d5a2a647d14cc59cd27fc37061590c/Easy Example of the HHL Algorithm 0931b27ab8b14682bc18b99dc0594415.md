@@ -38,29 +38,9 @@ $$
 
 $$
 
-For easier calculation we will cheat a bit to obtain the encoding of the eigenvalues. We will choose t freely so that we can encode them in binary and not in some weird state. 
+For easier calculation we will cheat a bit to obtain an easy encoding of the eigenvalues. In the  encoding scheme $\widetilde{λ_j} = Nλ_jt/2π)$ we can choose t freely so that we can encode them in binary and not in some weird state. 
 
 Eigenvalues of the eigenvectors:
-
-$$
-λ_0 = \frac{2}{3}
-
-$$
-
-$$
-\widetilde{λ_0} = \ket{01}
-$$
-
-$$
-λ_1 = \frac{4}{3}
-
-$$
-
-$$
-\widetilde{λ_1} = \ket{10}
-$$
-
-Our encoding scheme to achieve that will look like this
 
 $$
 \widetilde{λ_j} = Nλ_jt/2π
@@ -69,6 +49,16 @@ $$
 $$
 N = 4 \\
 t = 3\pi/4
+$$
+
+$$
+λ_0 = \frac{2}{3}
+
+$$
+
+$$
+λ_1 = \frac{4}{3}
+
 $$
 
 $$
@@ -87,11 +77,13 @@ $$
 |\widetilde{λ_0}⟩ = |01⟩
 $$
 
+Thats it for the preparation.
+
+We can calculate the solution classically:
+
 $$
 |\widetilde{λ_1}⟩ = |10⟩
 $$
-
-We can calculate the solution classically:
 
 $$
 
@@ -110,19 +102,21 @@ $$
 
 $$
 
+### State preparation
+
 We need $log_2(N)$ qubits where $N$ is the number of elements in $\vec{b}$.
 
 Meaning we need 1 qubit to represent $\vec{b}$.
 
 The c-register which will store the eigenvalues need 2 qubits.
 
-### State preparation
-
-Numer of qubits for c-register: n = 2
+Number of qubits for c-register: n = 2
 
 Number of components of $\vec{b}$ : $N_b = 2^{n_b}$
 
 Number of  qubits for $\vec{b}$: $n_b = 1$ 
+
+→ 4 qubits in total
 
 $$
 | Ψ_0⟩ = | 0⟩_b | 00⟩_c | 0⟩_a  =  |0000⟩
@@ -152,7 +146,7 @@ We perform QPE:
 
 $$
 |Ψ_4⟩ = \ket{b} | \widetilde{λ}_j⟩ |0⟩
-=\sum_{j=0}^{2^{n_b}−1}
+=\sum_{j=0}^{2^{1}−1}
 b_j |u_j⟩ | \widetilde{λ}_j⟩ |0⟩
 $$
 
@@ -175,6 +169,10 @@ $$
 \ket{b} = \sum_{j=0}^{2^{n_b}-1} b_j\ket{u_j}
 $$
 
+TODO überall cba noch hinschreiben??
+
+State 3 und 7 noch hinzufügen???
+
 ### Inversion of the eigenvalues and measurement of the ancilla qubit
 
 We now Rotate the ancilla qubit:
@@ -194,33 +192,43 @@ $$
 Lets say we measure $\ket{1}$ in the ancilla qubit, then:
 
 $$
-|Ψ_6⟩ =\sqrt{\frac{8}{5}}\left(-\frac{1}{\sqrt{2}}|u_0⟩|01⟩|1⟩ +\frac{1}{2\sqrt{2}}|u_1⟩ |10⟩ |1⟩\right)
+|Ψ_6⟩ =\sqrt{\frac{8}{5}}\left(-\frac{1}{\sqrt{2}}|u_0⟩|01⟩|1⟩ +\frac{1}{2\sqrt{2}}|u_1⟩ |10⟩ \right)|1⟩
 
 $$
+
+Say mark what is what 
+
+eigenvectors
+
+eigenvalues
 
 ### Inverse Quantum Phase Estimation
 
 $$
 |Ψ9⟩ =
-| x⟩_b | 0⟩^{⊗2}_c | 1⟩
-
-\\=\frac{2}{3}\sqrt{\frac{8}{5}}
-\left(
-    -\frac{1}{\frac{2}{3}\sqrt{2}}|u_0⟩ +\frac{1}   {\frac{4}{3}\sqrt{2}} |u_1⟩
-
-\right) 
-|00⟩ | 1⟩
+| x⟩_b | 0⟩^{⊗2}_c | 1⟩_a
 
 $$
 
 $$
-\ket{x} =  A^{-1} \ket{b} 
-\\= 
+\ket{x}_b =  A^{-1} \ket{b} 
+= 
 \sum_{i=0}^{2^{1}-1} 
 \lambda_i^{-1} b_i\ket{u_i}
 \\= \lambda_0^{-1} b_0\ |u_0⟩ +  \lambda_1^{-1} b_1\ket{u_1}
 
 \\=  -\frac{1}{\frac{2}{3}\sqrt{2}}|u_0⟩ +\frac{1}   {\frac{4}{3}\sqrt{2}} |u_1⟩
+$$
+
+$$
+|Ψ9⟩ =
+
+\frac{2}{3}\sqrt{\frac{8}{5}}
+\left(
+    -\frac{1}{\frac{2}{3}\sqrt{2}}|u_0⟩ +\frac{1}   {\frac{4}{3}\sqrt{2}} |u_1⟩
+
+\right) 
+|00⟩ | 1⟩
 $$
 
 After performing IQPE the c-register is reset to 0 again and the b-register stores |x⟩.
@@ -235,17 +243,24 @@ $$
 
 $$
 
+$$
+| Ψ_9⟩ = 
+\left(\frac{1}{2}\sqrt{\frac{2}{5}}| 0⟩
++\frac{1}{2}\sqrt{\frac{2}{5}} * 3 | 1⟩ \right)|00⟩ | 1⟩
+
+$$
+
 ### Measurement
 
 To get the probability of $|u_0⟩$ and $|u_1⟩$ we have to square their coefficients
 
 $$
-c_{|u_0⟩}=\left|\frac{1}{2}\sqrt{\frac{2}{5}}*1\right|^2 = \frac{1}{20}
+c_0=\left|\frac{1}{2}\sqrt{\frac{2}{5}}*1\right|^2 = \frac{1}{20}
 
 $$
 
 $$
-c_{|u_1⟩}=\left|\frac{1}{2}\sqrt{\frac{2}{5}}*3\right|^2 = \frac{9}{20}
+c_1=\left|\frac{1}{2}\sqrt{\frac{2}{5}}*3\right|^2 = \frac{9}{20}
 
 $$
 
@@ -395,7 +410,3 @@ c_{|u_1⟩}=\left|\frac{1}{2}\sqrt{\frac{2}{5}}*3\right|^2 = \frac{9}{20}
 $$
 
 Ratio in b-register is $1:9$ as expected.
-
-c-register:   $|01⟩$ or $|10⟩$
-
-ancillary qubit: $|0⟩$

@@ -6,9 +6,7 @@
     
 2. **Short mathematical/qc background**
     
-    [Diagonal/Hermetian/Unitary Matrix ](Seminar%20Overview%2064d5a2a647d14cc59cd27fc37061590c/Diagonal%20Hermetian%20Unitary%20Matrix%20e7163e3a52a749b5afff7d0b62e43975.md)
-    
-    [Important States and Operations](Seminar%20Overview%2064d5a2a647d14cc59cd27fc37061590c/Important%20States%20and%20Operations%20a183650dcd3b461a89b79c0df0b7f44c.md)
+    [Mathematical background](Seminar%20Overview%2064d5a2a647d14cc59cd27fc37061590c/Mathematical%20background%20a183650dcd3b461a89b79c0df0b7f44c.md)
     
     [QPE (Nur Highlevel)](Seminar%20Overview%2064d5a2a647d14cc59cd27fc37061590c/QPE%20(Nur%20Highlevel)%208f0a5e4da98e4981b1e687edf243ed64.md)
     
@@ -29,6 +27,16 @@
     [Applications/Future Outlook](Seminar%20Overview%2064d5a2a647d14cc59cd27fc37061590c/Applications%20Future%20Outlook%205418ace063c54459b68f2bc901d418b8.md)
     
 7. **Sources**
+
+[All sources](Seminar%20Overview%2064d5a2a647d14cc59cd27fc37061590c/All%20sources%202c717cf0e1f446da8a96dda29019238c.md)
+
+## TODO’s
+
+- Bezug zu it security
+- mehr veranschaulichungen??
+- Mehr zu evaluation
+- und future outlook qram???
+- 
 
 ### Scrap
 

@@ -1,8 +1,171 @@
 #+TITLE: Notes_presentation
 
+1. Engineering:
+   Linear equations are extensively used in engineering disciplines such as civil engineering, electrical engineering, mechanical engineering, and chemical engineering. They are employed in areas like circuit analysis, structural analysis, control systems, fluid dynamics, and optimization of engineering designs.
+
+2. Physics: Linear equations are fundamental in physics, particularly in classical mechanics, electromagnetism, quantum mechanics, and thermodynamics. They help describe the behavior of physical systems, model interactions between particles, analyze wave propagation, and study dynamic systems.
+
+3. Economics and Finance: Linear equations find application in economics and finance for modeling and analyzing economic systems, investment portfolios, pricing models, optimization of resource allocation, and studying market trends.
+
+4. Computer Science and Data Analysis: Linear equations play a crucial role in computer science algorithms, especially in areas like machine learning, data analysis, computer graphics, and computer simulations. They are used for tasks such as regression analysis, image processing, pattern recognition, and optimization algorithms.
+
+5. Operations Research: Linear equations are extensively used in operations research for modeling and solving optimization problems in supply chain management, logistics, transportation, scheduling, resource allocation, and production planning.
+
+6. Statistics: Linear equations are employed in statistical analysis, including linear regression models, linear mixed models, and general linear models. They are used to analyze relationships between variables, estimate parameters, and make predictions.
+
+7. Natural Sciences: Linear equations find applications in various branches of natural sciences, including chemistry, biology, environmental science, and geology. They are used to model chemical reactions, population dynamics, ecological systems, climate models, and geological processes.
+
+8. Social Sciences: Linear equations are utilized in social sciences for modeling and analyzing social systems, survey data analysis, econometric models, and social network analysis.
+
+These domains represent just a few examples where linear equations are fundamental. In reality, linear equations find application in a wide range of fields, highlighting their significance in solving complex problems across various disciplines.
+
+
+* Hermitian
 
 
 
+M_{hermitian} =
+
+\begin{pmatrix}
+0 & M \\
+M^\dagger & 0
+\end{pmatrix}
+
+
+
+
+* Encoding
+
+U = e^{iAt}
+
+
+\begin{bmatrix}
+c_0 \\
+c_1
+\end{bmatrix}
+
+
+
+
+\begin{bmatrix}
+0 \\
+3
+\end{bmatrix}
+
+
+\begin{bmatrix}
+00 \\
+11
+\end{bmatrix}
+
+= \ket{0011}
+
+
+
+
+
+
+
+
+* Math background
+
+** Spectral decomposition
+
+A =  U D U^{\dagger}
+=
+
+\begin{bmatrix}
+    U_1 &
+    U_2 &
+    ...&
+    U_n
+\end{bmatrix}
+
+\begin{bmatrix}
+    \lambda_1 & 0 & 0 & 0\\
+     0 & \lambda_2 &0 & 0\\
+     0 & 0 & ... & 0\\
+     0 & 0 & 0& \lambda_n \\
+\end{bmatrix}
+
+\begin{bmatrix}
+    U^\dagger_1 \\
+    U^\dagger_2 \\
+    ...\\
+    U^\dagger_n
+\end{bmatrix}
+
+** Dot product
+\vec{v} \dot \vec{v} = |\vec{v}| |\vec{v}| \cos{\delta}  = 0
+\vec{v} \dot \vec{v} = |\vec{v}| |\vec{v}| \cos{\delta}  = 0
+
+
+\vec{v}| = \sqrt{\vec{v}^2_x \cdot \vec{v}^2_y}  = \sqrt{\vec{v}\cdot \vec{v}}
+
+
+\sqrt{\bra{\phi}\ket{\phi}}
+\bra{\psi}\ket{\phi} = 0
+
+
+A^{-1}
+=  U D^{-1} U^{\dagger}
+=
+U^\dagger
+\begin{bmatrix}
+    \lambda_1^{-1} & 0 & 0 & 0\\
+    0 & \lambda_2^{-1} &0 & 0\\
+    0 & 0 & ... & 0\\
+    0 & 0 & 0& \lambda_n^{-1} \\
+\end{bmatrix} U
+=
+\begin{bmatrix}
+    \lambda_1^{-1} U^\dagger_1 &
+    \lambda_2^{-1} U^\dagger_2 &
+    ...&
+    \lambda_n^{-1} U^\dagger_n &
+\end{bmatrix}
+U
+
+*** Orthonormal basis
+\braket{E_i|E_i} = 1
+\braket{E_i|E_i} = 0 , i\neq j
+
+
+
+* Entagled state
+\ket{\Phi_1} = \frac{1}{\sqrt{2}} ( \ket{10} + \ket{11}) \\ = \ket{1}\otimes \frac{1}{\sqrt{2}} ( \ket{0} + \ket{1})\\
+= \ket{1} \ket{+}
+
+\ket{\Phi_2} = \frac{1}{\sqrt{2}} ( \ket{00} + \ket{11})
+
+* Ancilla roation
+= | Ψ_9⟩ = \ket{b} | \widetilde{λ}_j⟩ \frac 1 {\lambda^{-1}} |1⟩_a |
+
+
+
+* IQPE
+| Ψ_9⟩ =
+\frac{1}{2}\sqrt{\frac{2}{5}}
+\left( |0⟩ + 3|1⟩
+\right) |00⟩ | 1⟩
+= | Ψ_9⟩ = \left(\frac{1}{2}\sqrt{\frac{2}{5}}| 0⟩
++\frac{1}{2}\sqrt{\frac{2}{5}} * 3 | 1⟩ \right)|00⟩ | 1⟩
+
+
+
+
+
+* randome
+
+
+ \ket{+} = H \ket{0}
+ = \frac 1{ \sqrt 2}\ket{0} + \frac 1{ \sqrt 2} \ket{1}=
+ = \frac 1{ \sqrt 2} \left(\ket{0} - \ket{1}\right)=
+
+
+ \ket{-} = H \ket{1}
+ = \frac 1{ \sqrt 2}\ket{0} - \frac 1{ \sqrt 2} \ket{1}=
+ = \frac 1{ \sqrt 2} \left(\ket{0} - \ket{1}\right)=
 
 
 
