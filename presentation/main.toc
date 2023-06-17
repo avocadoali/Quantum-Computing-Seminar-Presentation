@@ -2,3 +2,4 @@
 \beamer@subsubsectionintoc {1}{0}{1}{Quanten Algorithmen}{4}{0}{1}
 \beamer@subsubsectionintoc {1}{0}{2}{Motivation}{5}{0}{1}
 \beamer@subsubsectionintoc {1}{0}{3}{Das Problem}{6}{0}{1}
+\beamer@sectionintoc {2}{Mathematische Grundlagen}{7}{0}{2}
