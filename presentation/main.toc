@@ -1,4 +1,4 @@
-\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@subsubsectionintoc {1}{0}{1}{House Allocation Problem}{4}{0}{1}
-\beamer@sectionintoc {2}{Introduction}{5}{0}{2}
-\beamer@subsubsectionintoc {2}{0}{1}{House Allocation Problem}{6}{0}{2}
+\beamer@sectionintoc {1}{Einführung}{3}{0}{1}
+\beamer@subsubsectionintoc {1}{0}{1}{Quanten Algorithmen}{4}{0}{1}
+\beamer@subsubsectionintoc {1}{0}{2}{Motivation}{5}{0}{1}
+\beamer@subsubsectionintoc {1}{0}{3}{Das Problem}{6}{0}{1}

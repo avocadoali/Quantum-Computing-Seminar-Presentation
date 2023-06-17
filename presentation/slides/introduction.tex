@@ -1,10 +1,73 @@
-\section{Introduction}
+\section{Einführung}
 
-\subsubsection{House Allocation Problem}
-\begin{frame}
-    \frametitle{Definitions}
-    \begin{itemize}
-        \item  Set of agents $N$ \\
-    \end{itemize}
-\end{frame}
+\subsubsection{Quanten Algorithmen}
 
+    \begin{frame}
+        \frametitle{Quanten Algorithmen}
+
+        Wir haben schon viel über die wichtigsten Algorithmen gehört
+        \begin{itemize}
+            \item  Shors-Algorithmus
+            \item  Grover-Algorithmus
+        \end{itemize}
+
+        \hfill
+
+        Der HHL-Algorithmus
+        \begin{itemize}
+            \item  erstellt von Aram Harrow, Avinatan Hassidim und Seht Lloyd 
+            \item  lösen von sehr großen linearen Gleichungen 
+        \end{itemize}
+
+        $$ A \vec{x} = \vec{b} $$
+
+    \end{frame}
+
+
+\subsubsection{Motivation}
+
+    \begin{frame}
+        \frametitle{Motivation}
+
+        Es löst grundlegendes Probleme in der Mathematik
+        \begin{itemize}
+            \item   Least square fitting 
+            \item   Optimierungs Probleme
+            \item   Simulationen und Imageprocessing
+            \item   ...
+       \end{itemize}
+
+        \hfil
+
+        Kleine Revolution insbesondere bei Quantum Machine Learning
+        \begin{itemize}
+            \item HHL als Subroutine oder in erweiterten Form benutzt
+            \item Abschätzung mit Computern brauchen mind N Zeitschritte!
+       \end{itemize}
+
+
+    \end{frame}
+
+\subsubsection{Das Problem}
+    \begin{frame}
+        \frametitle{Das Problem}
+
+        Gegeben: 
+        \begin{itemize}
+            \item $A$ Matrix der Form $n \times n$
+            \item $\vec{b}$
+       \end{itemize}
+
+       \hfill
+
+       Löse das System
+        $$A \vec{x} = \vec{b}$$
+
+    
+
+        HHL verspricht uns einen exponentiellen Speedup!!
+
+    \end{frame}
+
+
+        
