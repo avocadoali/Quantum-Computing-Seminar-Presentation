@@ -1,3 +1,1 @@
-\beamer@sectionintoc {1}{HHL Algorithmus}{3}{0}{1}
-\beamer@subsubsectionintoc {1}{0}{1}{Übersicht}{4}{0}{1}
-\beamer@subsubsectionintoc {1}{0}{2}{Der Algorithmus}{9}{0}{1}
+\beamer@sectionintoc {1}{Einfaches Beispiel}{3}{0}{1}
