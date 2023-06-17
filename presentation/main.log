@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.13)  17 JUN 2023 19:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.13)  17 JUN 2023 23:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -686,18 +686,18 @@ Dictionary: translator-theorem-dictionary, Language: English
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc) [2
 
-] (./slides/introduction.tex (./main.toc) [3
+] (./slides/hhl_algorithm.tex (./main.toc) [3
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 24.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 26.
  (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [4
@@ -706,21 +706,35 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
 ] [6
 
-]) (./slides/mathematical_background.tex (./main.toc) [7
+] [7
 
 ] [8
 
 ] [9
 
-] [10
+]
+<img/hhl_circuit.jpg, id=84, 853.1875pt x 369.38pt>
+File: img/hhl_circuit.jpg Graphic file (type jpg)
+<use img/hhl_circuit.jpg>
+Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 169.
+(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+ [10
 
-] [11
+ <./img/hhl_circuit.jpg>]
+File: img/hhl_circuit.jpg Graphic file (type jpg)
+<use img/hhl_circuit.jpg>
+Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 183.
+(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+ [11
 
-] [12
+]
+File: img/hhl_circuit.jpg Graphic file (type jpg)
+<use img/hhl_circuit.jpg>
+Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 197.
+(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+ [12
 
-] [13
-
-] [14
+]) (./slides/dummy.tex [13
 
 ])
 \tf@nav=\write6
@@ -734,21 +748,21 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
  (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 67712367F1AD56C68CE63725FDCF9316;262.
+(rerunfilecheck)             Checksum: C50DF305CF37C9433F0FF06390CA32BF;121.
  ) 
 Here is how much of TeX's memory you used:
- 21697 strings out of 476025
- 419298 string characters out of 5796532
- 1861388 words of memory out of 5000000
- 41658 multiletter control sequences out of 15000+600000
- 519343 words of font info for 57 fonts, out of 8000000 for 9000
+ 21729 strings out of 476025
+ 419878 string characters out of 5796532
+ 1860388 words of memory out of 5000000
+ 41689 multiletter control sequences out of 15000+600000
+ 523431 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,11n,122p,472b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (14 pages, 124293 bytes).
+ 128i,11n,122p,472b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (13 pages, 166349 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
