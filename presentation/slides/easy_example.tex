@@ -18,7 +18,7 @@
 
     \hfil
 
-    Klassisch Lösung
+    Klassische Lösung
     \begin{columns}[c]
         \begin{column}{0.5\hsize}
             \centering
@@ -144,11 +144,16 @@
 
     $$=\left(-\frac{1}{\sqrt{2}} \ket{u_0} \ket{01} +\frac{1}{\sqrt{2}}  
     \ket{u_1} \ket{10} \right)  \ket{0}$$
+
+    \hfil
+
+    \hfil
+
     \begin{itemize}
-    \item b-register encodes $\ket{b}$ in eigenbasis of A: $ \ket{u_0}$ or $\ket{u_1}$
-    \item c-register: eigenvalues $|\widetilde{\lambda}_0⟩$ and $|\widetilde{\lambda}_1⟩$ encoded as  $\$ket{01}$ and $\ket{10}$
-    \item a-register: ancilla qubit $\ket{0}$ 
-    \item and its respective eigenvalues: $b_0 =\frac{-1}{\sqrt{2}}$ and  $b_1 =\frac{1}{\sqrt{2}}$
+    \item b-register: Zustand $\ket{b}$ in Eigenbasis von A: $ \ket{u_0}$ or $\ket{u_1}$
+    \item jeweilige Koeffizienten: $b_0 =\frac{-1}{\sqrt{2}}$ and  $b_1 =\frac{1}{\sqrt{2}}$
+    \item c-register: Eigenwerte $\ket{\widetilde{\lambda}_0}$ und $\ket{\widetilde{\lambda}_1}$ enkodiert als  $\ket{01}$ und $\ket{10}$
+    \item a-register: ancilla Qubit $\ket{0}$ 
     \end{itemize}
 \end{frame}
 
@@ -169,13 +174,16 @@
 
 \begin{frame}
     \frametitle{Ancilla Roation - Eigenwerte invertieren}
+    Wir invertieren das Ancilla Qubit:
     $$\sum_{j=0}^{2^{1}-1} b_j \ket{u_j} \ket{\widetilde{\lambda}_j} \left(\sqrt{1-\frac{C^2}{\widetilde{\lambda}_j^2}}\ket{0} + \frac{C}{\widetilde{\lambda}_j} \ket{1}\right)$$
-    $$=-\frac{1}{\sqrt{2}} \ket{u_0} \ket{01}\left(\sqrt{1-\frac{1}{1^2}}\ket{0} + \frac{1}{1} \ket{1}\right) +\frac{1}{\sqrt{2}}  \ket{u_1} \ket{10} \left(\sqrt{1-\frac{1}{2^2}}\ket{0} + \frac{1}{2} \ket{1}\right)$$
-    $$=-\frac{1}{\sqrt{2}} \ket{u_0} \ket{01}\left(\ket{0} +\ket{1}\right)+\frac{1}{\sqrt{2}} \ket{u_1} \ket{10}\left(\sqrt{1-\frac{1}{4}}\ \ket{0} + \frac{1}{2} \ket{1}\right)$$
+    %$$=-\frac{1}{\sqrt{2}} \ket{u_0} \ket{01}\left(\sqrt{1-\frac{1}{1^2}}\ket{0} + \frac{1}{1} \ket{1}\right) +\frac{1}{\sqrt{2}}  \ket{u_1} \ket{10} \left(\sqrt{1-\frac{1}{2^2}}\ket{0} + \frac{1}{2} \ket{1}\right)$$
+    $$=\left(-\frac{1}{\sqrt{2}} \ket{u_0} \ket{01}\left(\ket{0} +\ket{1}\right)+\frac{1}{\sqrt{2}} \ket{u_1} \ket{10}\right)\left(\sqrt{1-\frac{1}{4}}\ \ket{0} + \frac{1}{2} \ket{1}\right)$$
 
     \hfil
 
-    Lets say we measure $\ket{1}$ in the ancilla qubit, then:
+    \hfil
+
+    Wir gehen davon aus, dass wir $\ket{1}$ messen.
     $$  =\sqrt{\frac{8}{5}}\left(-\frac{1}{\sqrt{2}} \ket{u_0}\ket{01}\ket{1} +\frac{1}{2\sqrt{2}} \ket{u_1} \ket{10}\right)\ket{1}$$
 \end{frame}
 
@@ -192,14 +200,16 @@
 
 \begin{frame}
     \frametitle{Inverse Quantum Phase Estimation}
-$$ = \ket{x}_b \ket{00}_c \ket{1}_a $$
+    Wir führen IQPE aus:
+    $$\ket{x}_b \ket{00}_c \ket{1}_a $$
+    
+    $$ \ket{x}_b =  A^{-1} \ket{b} = 
+    \sum_{i=0}^{2^{1}-1} 
+    \lambda_i^{-1} b_i\ket{u_i} $$
 
-$$ \ket{x}_b =  A^{-1} \ket{b} = 
-\sum_{i=0}^{2^{1}-1} 
-\lambda_i^{-1} b_i\ket{u_i} $$
-$$=\lambda_0^{-1} b_0\  \ket{u_0} +  \lambda_1^{-1} b_1\ket{u_1}$$
-$$=-\frac{1}{\frac{2}{3}\sqrt{2}} \ket{u_0} +\frac{1}   {\frac{4}{3}\sqrt{2}}  \ket{u_1}$$
-$$=\frac{2}{3}\sqrt{\frac{8}{5}} \left( -\frac{1}{\frac{2}{3}\sqrt{2}} \ket{u_0} +\frac{1}   {\frac{4}{3}\sqrt{2}}  \ket{u_1}\right)  \ket{00} \ket{1} $$
+    $$=\lambda_0^{-1} b_0\  \ket{u_0} +  \lambda_1^{-1} b_1\ket{u_1}$$
+    $$=-\frac{1}{\frac{2}{3}\sqrt{2}} \ket{u_0} +\frac{1}   {\frac{4}{3}\sqrt{2}}  \ket{u_1}$$
+    $$=\frac{2}{3}\sqrt{\frac{8}{5}} \left( -\frac{1}{\frac{2}{3}\sqrt{2}} \ket{u_0} +\frac{1}   {\frac{4}{3}\sqrt{2}}  \ket{u_1}\right)  \ket{00} \ket{1} $$
 
 \end{frame}
 
@@ -217,6 +227,15 @@ $$ = \frac{1}{2}\sqrt{\frac{2}{5}} \left( \ket{0} + 3\ket{1} \right)  \ket{00} \
 
 $$ = \left(\frac{1}{2}\sqrt{\frac{2}{5}} \ket{0} +\frac{1}{2}\sqrt{\frac{2}{5}} * 3 \ket{1} \right) \ket{00} \ket{1} $$
 
+\end{frame}
+
+\begin{frame}
+    \frametitle{Ancilla Roation - Eigenwerte invertieren}
+    \begin{center}
+    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+    \end{center}
+
+$$ = \left(\frac{1}{2}\sqrt{\frac{2}{5}} \ket{0} +\frac{1}{2}\sqrt{\frac{2}{5}} * 3 \ket{1} \right) \ket{00} \ket{1} $$
 \end{frame}
 
 

@@ -2,33 +2,39 @@
 
 \begin{frame}
     \frametitle{Hermitsche Matrix}
-    Sei: 
+    \textbf{Sei: }
     \begin{itemize}
         \item   $A$ eine $n \times n$ Matrix
         \item   $A^T$ das transponierte von $A$
         \item   $\overline A$  das komplex konjugierter von $A$
         \item   $A^\dagger$ die Hermitsche Matrix von A
    \end{itemize}
+
    \hfil
-    Dann:
+
+    \textbf{Dann:}
     $$A = \overline {A^T} = A^\dagger $$
-    
 \end{frame}
+
 \begin{frame}
     \frametitle{Hermitsche Matrix}
     
-    Beispiel:
+    \textbf{Beispiel:}
     $$A=\begin{bmatrix}2 & 1-i \\ 1+i & 3 \\ \end{bmatrix}$$
     $$\overline A = \begin{bmatrix} 2 & 1+i \\ 1-i & 3 \end{bmatrix}$$
-    $$\overline {A^T} \begin{bmatrix} 2 & 1-i \\ 1+i & 3 \\ \end{bmatrix}= A$$
+    $$\overline {A^T} = \begin{bmatrix} 2 & 1-i \\ 1+i & 3 \\ \end{bmatrix}= A = A^\dagger$$
+
     \hfil
-    
-    Die Matrix $A^\dagger$ ist Hermitisch.
+
+    \hfil
+
+    Die Matrix $A$ ist Hermitisch.
 \end{frame}
+
 \begin{frame}
     \frametitle{Hermitsche Matrix}
     
-    Falls eines Matrix nicht Hermitisch ist:
+    Falls eines Matrix $A$ nicht Hermitisch ist:
 
     \hfil
 
@@ -38,7 +44,7 @@
 
 \begin{frame}
     \frametitle{Spektralzerlegung}
-    Sei: 
+    \textbf{Sei: }
     \begin{itemize}
         \item   $A$ eine $n \times n$ Matrix
         \item   $D$ ist eine Diagonalmatrix aus den Eigenwerten
@@ -51,19 +57,22 @@
 
     $$= \begin{bmatrix} U_1&U_2&...&U_n \end{bmatrix}
     \begin{bmatrix} \lambda_1 & 0 & 0 & 0\\ 0 & \lambda_2 &0 & 0\\ 0 & 0 & ... & 0\\ 0 & 0 & 0& \lambda_n \\ \end{bmatrix}
-    \begin{bmatrix} U_1^T\\ U_2^T\\ ...\\ U_n^T\end{bmatrix}$$
+    \begin{bmatrix} U_1\\ U_2\\ ...\\ U_n\end{bmatrix}$$
 
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Spektralzerlegung}
-    Dann:
+    Das Inverse von $A$ kann man folgendermaßen berechen:
 
     $$A^{-1}=  U^T D^{-1} U$$
 
-    $$=\begin{bmatrix} U_1^T\\ U_2^T\\ ...\\ U_n^T\end{bmatrix}
-    \begin{bmatrix} \lambda_1^{-1} & 0 & 0 & 0\\ 0 & \lambda_2^{-1} &0 & 0\\ 0 & 0 & ... & 0\\ 0 & 0 & 0& \lambda_n^{-1} \\ \end{bmatrix} 
+    $$=\begin{bmatrix} U_1\\ U_2\\ ...\\ U_n\end{bmatrix} 
+    \begin{bmatrix} \lambda_1^{-1} & 0 & 0 & 0\\ 0 & \lambda_2^{-1} &0 & 0\\ 0 & 0 & ... & 0\\ 0 & 0 & 0& \lambda_n^{-1} \end{bmatrix} 
+    \begin{bmatrix} U_1&U_2&...&U_n \end{bmatrix}$$
+
+ $$=\begin{bmatrix} U_1 \lambda_1^{-1} \\ U_2 \lambda_2^{-1}\\ ...\\ U_n \lambda_n^{-1} \end{bmatrix} 
     \begin{bmatrix} U_1&U_2&...&U_n \end{bmatrix}$$
 
     \hfil
@@ -88,7 +97,7 @@
 
 \begin{frame}
     \frametitle{Veschränkung}
-    Beispiel
+    \textbf{Beispiel:}
 
     \hfil
 

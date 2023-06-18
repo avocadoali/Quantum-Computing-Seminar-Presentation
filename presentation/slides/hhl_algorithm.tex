@@ -7,6 +7,7 @@
         Vergleich klassische zur quanten Version
 
         \hfil
+
         \begin{columns}[c]
             \begin{column}{0.6\hsize}\centering
             Klassisch
@@ -31,9 +32,8 @@
 
         \hfil
 
-        $A$ kann man auch in der Spektralzerlegung darstellen
+        Man kann $A$ auch in der Spektralzerlegung darstellen
 
-        \hfil
         \begin{columns}[c]
             \begin{column}{0.4\hsize}\centering
             $$A = \sum_{i=0}^{2^{n_b}-1} \lambda_i \ket{u_i}\bra{u_i}$$
@@ -42,6 +42,7 @@
 
             \begin{column}{0.6\hsize}
             \begin{itemize}
+            \item   $n_b$ ist die Länge $\vec{b}$ 
             \item   $\lambda_i$ sind Eigenwerte von A
             \item   $\ket{u_i}$ sind Eigenvektoren von A
             \end{itemize}
@@ -54,8 +55,6 @@
         \hfil
 
         $\vec{b}$ kann in der Eigenbasis von $A$ dargestellt werden 
-
-        \hfil
 
         \begin{columns}[c]
             \begin{column}{0.4\hsize}\centering
@@ -152,12 +151,12 @@
     \begin{enumerate}
         \item Ancilla (Helfer): a-register
         \begin{itemize}
-            \item Indikator qubit - zeigt an ob Zustände verschränkt sind
+            \item Indikator qubit, zeigt ob Zustände verschränkt sind
         \end{itemize}
 
         \item Register: c-register
         \begin{itemize}
-            \item beinhaltet später die eigenwerte
+            \item beinhaltet die Eigenwerte
         \end{itemize}
         
         \item Input: b-register 
@@ -170,20 +169,22 @@
 
 \begin{frame}
     \frametitle{Quantum Circuit}
-    \hfil
-
-    Wo befindet sich die Matrix $A$?
     \begin{center}
     \includegraphics[width=10cm]{img/hhl_circuit.jpg}
     \end{center}
 
     \hfil
-    Wir als Unitary (Einheitsmatrix) in die Phase Estimation enkodiert.
+
+    Wo befindet sich die Matrix $A$?
+
+    \hfil
+
+    Wird als Unitary in die Phase Estimation enkodiert.
     $$U = e^{iAt}$$
 \end{frame}
 
 \begin{frame}
-    \frametitle{Quantum Circuit}
+    \frametitle{State Preparation}
     \begin{center}
     \includegraphics[width=10cm]{img/hhl_circuit.jpg}
     \end{center}
@@ -259,19 +260,19 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Ancilla Roation - Eigenwerte invertieren}
+    \frametitle{Ancilla Roation - Eigenwerte invertieren}       
     Rotation des Ancilla Bits
-$$\ket{\Psi_3} = \sum_{j=0}^{2^{n_b}-1} b_j \ket{u}_j  \ket{\widetilde{\lambda}_j} \left( \sqrt{1-\frac{C^2}{\widetilde{\lambda}_j^2}} \ket{0}_a + \frac{C}{\widetilde{\lambda}_j} \ket{1}_a\right)$$
+    %$$\ket{\Psi_3} = \sum_{j=0}^{2^{n_b}-1} b_j \ket{u}_j  \ket{\widetilde{\lambda}_j} \left( \sqrt{1-\frac{C^2}{\widetilde{\lambda}_j^2}} \ket{0}_a + \frac{C}{\widetilde{\lambda}_j} \ket{1}_a\right)$$
 
-    $$\ket{\Psi_3} = \ket{b}_b \ket{\widetilde{\lambda_j}}_c\ket{??}_a$$
+    $$\ket{\Psi_3} = \ket{b}_b \ket{\widetilde{\lambda}}_c\ket{??}_a$$
+    Das a-Register befindet sich nun in einer Superposition 
 
     \hfil
 
     Gehen wir davon aus, dass unsere Ancilla-Qubit auf $\ket{1}$ kollabiert.
-$$\ket{\Psi_3} = \frac {1} {\sqrt{\sum_{j=0}^{2^{n_b}-1} | \frac{b_jC} {\widetilde{\lambda}_j}|^2}}
-\sum_{j=0}^{2^{n_b}-1} b_j \ket{u_j}  \ket{\widetilde{\lambda}_j} \frac{C}{\widetilde{\lambda}_j} \ket{1}_a$$
+    %$$\ket{\Psi_3} = \frac {1} {\sqrt{\sum_{j=0}^{2^{n_b}-1} | \frac{b_jC} {\widetilde{\lambda}_j}|^2}}\sum_{j=0}^{2^{n_b}-1} b_j \ket{u_j}  \ket{\widetilde{\lambda}_j} \frac{C}{\widetilde{\lambda}_j} \ket{1}_a$$
 
-    $$\ket{\Psi_3} = \ket{b}_b \ket{\widetilde{\lambda_j}}_c \widetilde{\lambda^{-1}} \ket{1}_a$$
+    $$\ket{\Psi_3} = \ket{b}_b \ket{\widetilde{\lambda}}_c \widetilde{\lambda^{-1}} \ket{1}_a$$
 
 \end{frame}
 
@@ -283,7 +284,7 @@ $$\ket{\Psi_3} = \frac {1} {\sqrt{\sum_{j=0}^{2^{n_b}-1} | \frac{b_jC} {\widetil
     \end{center}
 
     Dann erhalten wir:
-    $$\ket{\Psi_3} = \ket{b}_b \ket{\widetilde{\lambda_j}}_c \widetilde{\lambda^{-1}} \ket{1}_a$$
+    $$\ket{\Psi_3} = \ket{b}_b \ket{\widetilde{\lambda}}_c \widetilde{\lambda^{-1}} \ket{1}_a$$
 
 
 \end{frame}
@@ -294,7 +295,7 @@ $$\ket{\Psi_3} = \frac {1} {\sqrt{\sum_{j=0}^{2^{n_b}-1} | \frac{b_jC} {\widetil
     Uns fällt auf, dass wir schon sehr nah an unserem Ergebnis sind
     \begin{columns}[c]
         \begin{column}{0.5\hsize}\centering
-        $$\ket{\Psi_3} = \ket{b}_b \ket{\widetilde{\lambda_j}}_c \widetilde{\lambda^{-1}} \ket{1}_a$$
+        $$\ket{\Psi_3} = \ket{b}_b \ket{\widetilde{\lambda}}_c \widetilde{\lambda^{-1}} \ket{1}_a$$
         \end{column}
         \begin{column}{0.5\hsize}
         $$\ket{x} =  A^{-1} \ket{b} = \sum_{i=0}^{2^{n_b}-1} \lambda_i^{-1} b_i\ket{u_i}$$
@@ -303,10 +304,13 @@ $$\ket{\Psi_3} = \frac {1} {\sqrt{\sum_{j=0}^{2^{n_b}-1} | \frac{b_jC} {\widetil
 
     \hfil
 
+    \hfil
+
     \begin{itemize}
-        \item Eigenwerte sind invertiert.
-        \item aber b-Register mit c-Register verschränkt, $\ket{\widetilde{\lambda}_j}$.
-        \item müssen den Zustand auflösen (alle bisherigen Schritte rückgäng machen)
+        \item Eigenwerte sind invertiert $\lambda^{-1}$.
+        \item aber b-Register mit c-Register verschränkt
+        \item müssen den Zustand auflösen 
+        \item alle bisherigen Schritte rückgäng machen (IQPE)
     \end{itemize}
 
 
@@ -333,8 +337,8 @@ $$\ket{\Psi_3} = \frac {1} {\sqrt{\sum_{j=0}^{2^{n_b}-1} | \frac{b_jC} {\widetil
     \frametitle{Measurment}
     
     \begin{itemize}
-        \item $\ket{x}_b$ kann nicht ausgelesen werden, da nur $log_2(n)$ Einträge 
-        \item können Erwartungswert durch Messungen $M$ ermitteln
+        \item $\ket{x}_b$ kann nicht elemntweise ausgelesen werden
+        \item können Informationen durch eine Messung $M$ ermittlen
         $$ E(x) := \bra{x}M\ket{x} $$
 
     \end{itemize}
