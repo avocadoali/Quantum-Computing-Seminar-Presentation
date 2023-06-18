@@ -1,6 +1,6 @@
 \beamer@sectionintoc {1}{Einführung}{3}{0}{1}
 \beamer@sectionintoc {2}{Mathematische Grundlagen}{7}{0}{2}
 \beamer@sectionintoc {3}{HHL Algorithmus}{15}{0}{3}
-\beamer@sectionintoc {4}{Einfaches Beispiel}{35}{0}{4}
-\beamer@sectionintoc {5}{Evaluierung}{51}{0}{5}
-\beamer@sectionintoc {6}{Zukunftsperspektiven}{57}{0}{6}
+\beamer@sectionintoc {4}{Einfaches Beispiel}{19}{0}{4}
+\beamer@sectionintoc {5}{Evaluierung}{35}{0}{5}
+\beamer@sectionintoc {6}{Zukunftsperspektiven}{41}{0}{6}
