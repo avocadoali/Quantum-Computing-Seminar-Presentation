@@ -97,7 +97,7 @@
     \frametitle{State Preparation}
 
     \begin{center}
-    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+    \includegraphics[width=10.5cm]{img/example_circuit/example_circuit.jpg}
     \end{center}
 
     \begin{enumerate}
@@ -124,11 +124,11 @@
     \frametitle{State Preparation}
 
     \begin{center}
-    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+    \includegraphics[width=10.5cm]{img/example_circuit/example_circuit_1.jpg}
     \end{center}
 
     Wir starten im 1 Zustand
-    $$\ket{\Psi_1} = \ket{0}_b\ \ket{00}_c\ \ket{0}_a = \ket{1000}$$
+    $$\ket{\Psi_1} = \ket{1}_b\ \ket{00}_c\ \ket{0}_a = \ket{1000}$$
 
 \end{frame}
 
@@ -160,17 +160,14 @@
 \begin{frame}
     \frametitle{Quantum Phase Estimation}
     \begin{center}
-    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+    \includegraphics[width=10.5cm]{img/example_circuit/example_circuit_2.jpg}
     \end{center}
 
     Wir erhalten:
     $$\ket{\Psi_2} =\left(-\frac{1}{\sqrt{2}} \ket{u_0} \ket{01} +\frac{1}{\sqrt{2}}  
-    \ket{u_1} \ket{10} \right)  \ket{0}$$
+    \ket{u_1} \ket{10} \right)  \ket{0}_a$$
 
 \end{frame}
-
-
-
 
 \begin{frame}
     \frametitle{Ancilla Roation - Eigenwerte invertieren}
@@ -184,16 +181,17 @@
     \hfil
 
     Wir gehen davon aus, dass wir $\ket{1}$ messen.
-    $$  =\sqrt{\frac{8}{5}}\left(-\frac{1}{\sqrt{2}} \ket{u_0}\ket{01}\ket{1} +\frac{1}{2\sqrt{2}} \ket{u_1} \ket{10}\right)\ket{1}$$
+    $$  =\sqrt{\frac{8}{5}}\left(-\frac{1}{\sqrt{2}} \ket{u_0}\ket{01}\ket{1} +\frac{1}{2\sqrt{2}} \ket{u_1} \ket{10}\right)\ket{1}_a$$
 \end{frame}
 
 \begin{frame}
     \frametitle{Ancilla Roation - Eigenwerte invertieren}
     \begin{center}
-    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+
+    \includegraphics[width=10.5cm]{img/example_circuit/example_circuit_3.jpg}
     \end{center}
 
-    $$  =\sqrt{\frac{8}{5}}\left(-\frac{1}{\sqrt{2}} \ket{u_0}\ket{01}\ket{1} +\frac{1}{2\sqrt{2}} \ket{u_1} \ket{10}\right)\ket{1}$$
+    $$ \ket{\Psi_3} =\sqrt{\frac{8}{5}}\left(-\frac{1}{\sqrt{2}} \ket{u_0}\ket{01}\ket{1} +\frac{1}{2\sqrt{2}} \ket{u_1} \ket{10}\right)\ket{1}_a$$
 \end{frame}
 
 
@@ -209,7 +207,7 @@
 
     $$=\lambda_0^{-1} b_0\  \ket{u_0} +  \lambda_1^{-1} b_1\ket{u_1}$$
     $$=-\frac{1}{\frac{2}{3}\sqrt{2}} \ket{u_0} +\frac{1}   {\frac{4}{3}\sqrt{2}}  \ket{u_1}$$
-    $$=\frac{2}{3}\sqrt{\frac{8}{5}} \left( -\frac{1}{\frac{2}{3}\sqrt{2}} \ket{u_0} +\frac{1}   {\frac{4}{3}\sqrt{2}}  \ket{u_1}\right)  \ket{00} \ket{1} $$
+    $$=\frac{2}{3}\sqrt{\frac{8}{5}} \left( -\frac{1}{\frac{2}{3}\sqrt{2}} \ket{u_0} +\frac{1}   {\frac{4}{3}\sqrt{2}}  \ket{u_1}\right)  \ket{00}_b \ket{1}_a $$
 
 \end{frame}
 
@@ -223,19 +221,19 @@ Wegen Normalisierung der Eigenvektoren können wir
     \item $ \ket{u_1}= \frac{-1}{\sqrt{2}}\ket{0} + \frac{1}{\sqrt{2}}\ket{1}$ 
 \end{itemize}
 
-$$ = \frac{1}{2}\sqrt{\frac{2}{5}} \left( \ket{0} + 3\ket{1} \right)  \ket{00} \ket{1} $$
+$$ \ket{\Psi_4}= \frac{1}{2}\sqrt{\frac{2}{5}} \left( \ket{0} + 3\ket{1} \right)  \ket{00}_b \ket{1}_a $$
 
-$$ = \left(\frac{1}{2}\sqrt{\frac{2}{5}} \ket{0} +\frac{1}{2}\sqrt{\frac{2}{5}} * 3 \ket{1} \right) \ket{00} \ket{1} $$
+$$ \ket{\Psi_4}= \left(\frac{1}{2}\sqrt{\frac{2}{5}} \ket{0} +\frac{1}{2}\sqrt{\frac{2}{5}} * 3 \ket{1} \right) \ket{00}_b \ket{1}_a $$
 
 \end{frame}
 
 \begin{frame}
     \frametitle{Ancilla Roation - Eigenwerte invertieren}
     \begin{center}
-    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+    \includegraphics[width=10.5cm]{img/example_circuit/example_circuit_4.jpg}
     \end{center}
 
-$$ = \left(\frac{1}{2}\sqrt{\frac{2}{5}} \ket{0} +\frac{1}{2}\sqrt{\frac{2}{5}} * 3 \ket{1} \right) \ket{00} \ket{1} $$
+$$ \ket{\Psi_4}= \left(\frac{1}{2}\sqrt{\frac{2}{5}} \ket{0} +\frac{1}{2}\sqrt{\frac{2}{5}} * 3 \ket{1} \right) \ket{00}_b \ket{1}_a$$
 \end{frame}
 
 
@@ -249,6 +247,17 @@ $$ c_0=\left|\frac{1}{2}\sqrt{\frac{2}{5}}*1\right|^2 = \frac{1}{20} $$
 $$ c_1=\left|\frac{1}{2}\sqrt{\frac{2}{5}}*3\right|^2 = \frac{9}{20} $$
 
 Das Verhältnis im b-Register ist wie erwartet $1:9$.
+
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{Gesamte Rechnung}
+    \begin{center}
+    \includegraphics[width=10.5cm]{img/example_circuit/example_circuit_5.jpg}
+    \end{center}
+
 
 \end{frame}
 

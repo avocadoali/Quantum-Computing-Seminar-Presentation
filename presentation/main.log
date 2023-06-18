@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.13)  18 JUN 2023 17:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.13)  18 JUN 2023 22:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -737,73 +737,84 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 ] [21
 
 ]
-<img/hhl_circuit.jpg, id=226, 853.1875pt x 369.38pt>
-File: img/hhl_circuit.jpg Graphic file (type jpg)
-<use img/hhl_circuit.jpg>
-Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 168.
-(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+<img/hhl_circuit/hhl_circuit.jpg, id=185, 963.6pt x 461.725pt>
+File: img/hhl_circuit/hhl_circuit.jpg Graphic file (type jpg)
+<use img/hhl_circuit/hhl_circuit.jpg>
+Package pdftex.def Info: img/hhl_circuit/hhl_circuit.jpg  used on input line 167.
+(pdftex.def)             Requested size: 298.75394pt x 143.14735pt.
  [22
 
- <./img/hhl_circuit.jpg>]
-File: img/hhl_circuit.jpg Graphic file (type jpg)
-<use img/hhl_circuit.jpg>
-Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 184.
-(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+ <./img/hhl_circuit/hhl_circuit.jpg>]
+File: img/hhl_circuit/hhl_circuit.jpg Graphic file (type jpg)
+<use img/hhl_circuit/hhl_circuit.jpg>
+Package pdftex.def Info: img/hhl_circuit/hhl_circuit.jpg  used on input line 183.
+(pdftex.def)             Requested size: 298.75394pt x 143.14735pt.
  [23
 
 ]
-File: img/hhl_circuit.jpg Graphic file (type jpg)
-<use img/hhl_circuit.jpg>
-Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 196.
-(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+<img/hhl_circuit/hhl_circuit_0.jpg, id=196, 963.6pt x 461.725pt>
+File: img/hhl_circuit/hhl_circuit_0.jpg Graphic file (type jpg)
+<use img/hhl_circuit/hhl_circuit_0.jpg>
+Package pdftex.def Info: img/hhl_circuit/hhl_circuit_0.jpg  used on input line 197.
+(pdftex.def)             Requested size: 298.75394pt x 143.14735pt.
  [24
 
-] [25
+ <./img/hhl_circuit/hhl_circuit_0.jpg>] [25
 
 ]
-File: img/hhl_circuit.jpg Graphic file (type jpg)
-<use img/hhl_circuit.jpg>
-Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 223.
-(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+<img/hhl_circuit/hhl_circuit_1.jpg, id=208, 963.6pt x 461.725pt>
+File: img/hhl_circuit/hhl_circuit_1.jpg Graphic file (type jpg)
+<use img/hhl_circuit/hhl_circuit_1.jpg>
+Package pdftex.def Info: img/hhl_circuit/hhl_circuit_1.jpg  used on input line 224.
+(pdftex.def)             Requested size: 298.75394pt x 143.14735pt.
  [26
 
-]
-File: img/hhl_circuit.jpg Graphic file (type jpg)
-<use img/hhl_circuit.jpg>
-Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 236.
-(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+ <./img/hhl_circuit/hhl_circuit_1.jpg>]
+<img/hhl_circuit/hhl_circuit_2.jpg, id=214, 963.6pt x 461.725pt>
+File: img/hhl_circuit/hhl_circuit_2.jpg Graphic file (type jpg)
+<use img/hhl_circuit/hhl_circuit_2.jpg>
+Package pdftex.def Info: img/hhl_circuit/hhl_circuit_2.jpg  used on input line 237.
+(pdftex.def)             Requested size: 298.75394pt x 143.14735pt.
  [27
 
-] [28
+ <./img/hhl_circuit/hhl_circuit_2.jpg>] [28
 
 ] [29
 
 ]
-File: img/hhl_circuit.jpg Graphic file (type jpg)
-<use img/hhl_circuit.jpg>
-Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 290.
-(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+<img/hhl_circuit/hhl_circuit_3.jpg, id=230, 963.6pt x 461.725pt>
+File: img/hhl_circuit/hhl_circuit_3.jpg Graphic file (type jpg)
+<use img/hhl_circuit/hhl_circuit_3.jpg>
+Package pdftex.def Info: img/hhl_circuit/hhl_circuit_3.jpg  used on input line 293.
+(pdftex.def)             Requested size: 298.75394pt x 143.14735pt.
  [30
 
-] [31
+ <./img/hhl_circuit/hhl_circuit_3.jpg>] [31
 
 ]
-File: img/hhl_circuit.jpg Graphic file (type jpg)
-<use img/hhl_circuit.jpg>
-Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 333.
-(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+<img/hhl_circuit/hhl_circuit_4.jpg, id=242, 963.6pt x 461.725pt>
+File: img/hhl_circuit/hhl_circuit_4.jpg Graphic file (type jpg)
+<use img/hhl_circuit/hhl_circuit_4.jpg>
+Package pdftex.def Info: img/hhl_circuit/hhl_circuit_4.jpg  used on input line 336.
+(pdftex.def)             Requested size: 298.75394pt x 143.14735pt.
  [32
 
-] [33
+ <./img/hhl_circuit/hhl_circuit_4.jpg>]
+File: img/hhl_circuit/hhl_circuit_4.jpg Graphic file (type jpg)
+<use img/hhl_circuit/hhl_circuit_4.jpg>
+Package pdftex.def Info: img/hhl_circuit/hhl_circuit_4.jpg  used on input line 352.
+(pdftex.def)             Requested size: 298.75394pt x 143.14735pt.
+ [33
 
 ]
-File: img/hhl_circuit.jpg Graphic file (type jpg)
-<use img/hhl_circuit.jpg>
-Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 358.
-(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+<img/hhl_circuit/hhl_circuit_5.jpg, id=253, 963.6pt x 542.025pt>
+File: img/hhl_circuit/hhl_circuit_5.jpg Graphic file (type jpg)
+<use img/hhl_circuit/hhl_circuit_5.jpg>
+Package pdftex.def Info: img/hhl_circuit/hhl_circuit_5.jpg  used on input line 364.
+(pdftex.def)             Requested size: 298.75394pt x 168.04254pt.
  [34
 
-]) (./slides/easy_example.tex (./main.toc) [35
+ <./img/hhl_circuit/hhl_circuit_5.jpg>]) (./slides/easy_example.tex (./main.toc) [35
 
 ] [36
 
@@ -812,60 +823,71 @@ Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 358.
 ] [38
 
 ]
-File: img/hhl_circuit.jpg Graphic file (type jpg)
-<use img/hhl_circuit.jpg>
-Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 109.
-(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+<img/example_circuit/example_circuit.jpg, id=286, 953.5625pt x 481.8pt>
+File: img/example_circuit/example_circuit.jpg Graphic file (type jpg)
+<use img/example_circuit/example_circuit.jpg>
+Package pdftex.def Info: img/example_circuit/example_circuit.jpg  used on input line 109.
+(pdftex.def)             Requested size: 298.75394pt x 150.95177pt.
  [39
 
-] [40
+ <./img/example_circuit/example_circuit.jpg>] [40
 
 ]
-File: img/hhl_circuit.jpg Graphic file (type jpg)
-<use img/hhl_circuit.jpg>
-Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 133.
-(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+<img/example_circuit/example_circuit_1.jpg, id=298, 953.5625pt x 481.8pt>
+File: img/example_circuit/example_circuit_1.jpg Graphic file (type jpg)
+<use img/example_circuit/example_circuit_1.jpg>
+Package pdftex.def Info: img/example_circuit/example_circuit_1.jpg  used on input line 133.
+(pdftex.def)             Requested size: 298.75394pt x 150.95177pt.
  [41
 
-] [42
+ <./img/example_circuit/example_circuit_1.jpg>] [42
 
 ]
-File: img/hhl_circuit.jpg Graphic file (type jpg)
-<use img/hhl_circuit.jpg>
-Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 170.
-(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+<img/example_circuit/example_circuit_2.jpg, id=309, 953.5625pt x 481.8pt>
+File: img/example_circuit/example_circuit_2.jpg Graphic file (type jpg)
+<use img/example_circuit/example_circuit_2.jpg>
+Package pdftex.def Info: img/example_circuit/example_circuit_2.jpg  used on input line 170.
+(pdftex.def)             Requested size: 298.75394pt x 150.95177pt.
  [43
 
-]
-Overfull \hbox (15.73347pt too wide) detected at line 188
+ <./img/example_circuit/example_circuit_2.jpg>]
+Overfull \hbox (15.73347pt too wide) detected at line 185
 \OT1/cmss/m/n/10.95 = [] []
  []
 
 [44
 
 ]
-File: img/hhl_circuit.jpg Graphic file (type jpg)
-<use img/hhl_circuit.jpg>
-Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 197.
-(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+<img/example_circuit/example_circuit_3.jpg, id=321, 953.5625pt x 481.8pt>
+File: img/example_circuit/example_circuit_3.jpg Graphic file (type jpg)
+<use img/example_circuit/example_circuit_3.jpg>
+Package pdftex.def Info: img/example_circuit/example_circuit_3.jpg  used on input line 195.
+(pdftex.def)             Requested size: 298.75394pt x 150.95177pt.
  [45
 
-] [46
+ <./img/example_circuit/example_circuit_3.jpg>] [46
 
 ] [47
 
 ]
-File: img/hhl_circuit.jpg Graphic file (type jpg)
-<use img/hhl_circuit.jpg>
-Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 239.
-(pdftex.def)             Requested size: 284.52756pt x 123.18648pt.
+<img/example_circuit/example_circuit_4.jpg, id=337, 953.5625pt x 481.8pt>
+File: img/example_circuit/example_circuit_4.jpg Graphic file (type jpg)
+<use img/example_circuit/example_circuit_4.jpg>
+Package pdftex.def Info: img/example_circuit/example_circuit_4.jpg  used on input line 237.
+(pdftex.def)             Requested size: 298.75394pt x 150.95177pt.
  [48
 
-] [49
+ <./img/example_circuit/example_circuit_4.jpg>] [49
 
-]) (./slides/evaluation.tex (./main.toc) [50
+]
+<img/example_circuit/example_circuit_5.jpg, id=349, 953.5625pt x 481.8pt>
+File: img/example_circuit/example_circuit_5.jpg Graphic file (type jpg)
+<use img/example_circuit/example_circuit_5.jpg>
+Package pdftex.def Info: img/example_circuit/example_circuit_5.jpg  used on input line 262.
+(pdftex.def)             Requested size: 298.75394pt x 150.95177pt.
+ [50
 
-] [51
+ <./img/example_circuit/example_circuit_5.jpg>]) (./slides/evaluation.tex (./main.toc) [51
 
 ] [52
 
@@ -873,15 +895,15 @@ Package pdftex.def Info: img/hhl_circuit.jpg  used on input line 239.
 
 ] [54
 
+] [55
+
 ]
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 172.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) [55
+) [56
 
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) (./slides/practical_applications_outlooks.tex (./main.toc) [56
-
-] [57
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) (./slides/practical_applications_outlooks.tex (./main.toc) [57
 
 ] [58
 
@@ -890,6 +912,8 @@ File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 ] [60
 
 ] [61
+
+] [62
 
 ])
 \tf@nav=\write6
@@ -906,18 +930,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5276CC8E86ABEE33408130E3DEA0D4F2;760.
  ) 
 Here is how much of TeX's memory you used:
- 22029 strings out of 476025
- 424235 string characters out of 5796532
- 1863388 words of memory out of 5000000
- 41855 multiletter control sequences out of 15000+600000
- 523772 words of font info for 73 fonts, out of 8000000 for 9000
+ 22072 strings out of 476025
+ 426392 string characters out of 5796532
+ 1864388 words of memory out of 5000000
+ 41892 multiletter control sequences out of 15000+600000
+ 523466 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,12n,122p,472b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on main.pdf (61 pages, 242022 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
+Output written on main.pdf (62 pages, 679676 bytes).
 PDF statistics:
- 570 PDF objects out of 1000 (max. 8388607)
- 467 compressed objects within 5 object streams
- 137 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 517 PDF objects out of 1000 (max. 8388607)
+ 403 compressed objects within 5 object streams
+ 131 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,6 @@
 \section{HHL Algorithmus}
 
-\subsubsection{Übersicht}
+%\subsubsection{Übersicht}
 
     \begin{frame}
     \frametitle{Übersicht}
@@ -108,7 +108,7 @@
         \end{enumerate}
     \end{frame}
 
-\subsubsection{Der Algorithmus}
+%\subsubsection{Der Algorithmus}
 
     \begin{frame}
     \frametitle{Der Algorithmus}
@@ -117,11 +117,11 @@
         \begin{enumerate}
             \item State Preparation
             \begin{itemize}
-                \item Enkodiere Vektor und Matrix in Quanten Computer
+                \item Enkodiert Vektor und Matrix in Quanten Computer
             \end{itemize}
             \item Quantum Phase Estimation
             \begin{itemize}
-                \item ermittle Eigenwerte und Eigenvektoren 
+                \item ermittelt Eigenwerte und Eigenvektoren 
                 \item bilde $\ket{b}$ in Eigenbasis $A$ ab
             \end{itemize}
             \item Ancilla Bit Rotation 
@@ -145,9 +145,8 @@
     \begin{frame}
     \frametitle{Quantum Circuit}
     \begin{center}
-    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+    \includegraphics[width=10.5cm]{img/hhl_circuit/hhl_circuit.jpg}
     \end{center}
-
     \begin{enumerate}
         \item Ancilla (Helfer): a-register
         \begin{itemize}
@@ -170,7 +169,7 @@
 \begin{frame}
     \frametitle{Quantum Circuit}
     \begin{center}
-    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+    \includegraphics[width=10.5cm]{img/hhl_circuit/hhl_circuit.jpg}
     \end{center}
 
     \hfil
@@ -186,7 +185,9 @@
 \begin{frame}
     \frametitle{State Preparation}
     \begin{center}
-    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+
+    \includegraphics[width=10.5cm]{img/hhl_circuit/hhl_circuit_0.jpg}
+    %\includegraphics[width=10cm]{img/hhl_circuit.jpg}
     \end{center}
 
     Wir starten im 0 Zustand
@@ -213,7 +214,7 @@
 \begin{frame}
     \frametitle{State Preparation}
     \begin{center}
-    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+    \includegraphics[width=10.5cm]{img/hhl_circuit/hhl_circuit_1.jpg}
     \end{center}
 
     Dann erhalten wir:
@@ -225,7 +226,7 @@
 \begin{frame}
     \frametitle{Quantum Phase Estimation}
     \begin{center}
-    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+    \includegraphics[width=10.5cm]{img/hhl_circuit/hhl_circuit_2.jpg}
     \end{center}
 
     Wir wenden QPE an, um die Eigenwerte von A zu erhalten.
@@ -264,8 +265,9 @@
     Rotation des Ancilla Bits
     %$$\ket{\Psi_3} = \sum_{j=0}^{2^{n_b}-1} b_j \ket{u}_j  \ket{\widetilde{\lambda}_j} \left( \sqrt{1-\frac{C^2}{\widetilde{\lambda}_j^2}} \ket{0}_a + \frac{C}{\widetilde{\lambda}_j} \ket{1}_a\right)$$
 
-    $$\ket{\Psi_3} = \ket{b}_b \ket{\widetilde{\lambda}}_c\ket{??}_a$$
-    Das a-Register befindet sich nun in einer Superposition 
+    $$\ket{\Psi_3} = \ket{b}_b \ket{\widetilde{\lambda}}_c \left( \sqrt{1-\frac{C^2}{\widetilde{\lambda}_j^2}} \ket{0}_a + \frac{C}{\widetilde{\lambda}_j} \ket{1}_a\right)$$
+
+    Das a-Register befindet sich nun in einer Superposition und wir erhalten Inverse der Eigenwerte.
 
     \hfil
 
@@ -280,7 +282,8 @@
 \begin{frame}
     \frametitle{Ancilla Roation - Eigenwerte invertieren}
     \begin{center}
-    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+
+    \includegraphics[width=10.5cm]{img/hhl_circuit/hhl_circuit_3.jpg}
     \end{center}
 
     Dann erhalten wir:
@@ -322,7 +325,7 @@
 
     \frametitle{Inverse Quantum Phase Estimation}
     \begin{center}
-    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+    \includegraphics[width=10.5cm]{img/hhl_circuit/hhl_circuit_4.jpg}
     \end{center}
 
     Dann erhalten wir:
@@ -332,9 +335,12 @@
 
 \end{frame}
 
-
 \begin{frame}
     \frametitle{Measurment}
+    \begin{center}
+    \includegraphics[width=10.5cm]{img/hhl_circuit/hhl_circuit_4.jpg}
+    \end{center}
+
     
     \begin{itemize}
         \item $\ket{x}_b$ kann nicht elemntweise ausgelesen werden
@@ -342,17 +348,17 @@
         $$ E(x) := \bra{x}M\ket{x} $$
 
     \end{itemize}
+
 \end{frame}
 
 \begin{frame}
-    \frametitle{Measurment}
+    \frametitle{Überblick}
+
     \begin{center}
-    \includegraphics[width=10cm]{img/hhl_circuit.jpg}
+    \includegraphics[width=10.5cm]{img/hhl_circuit/hhl_circuit_5.jpg}
     \end{center}
+    Unsere gesamtes Vorgehen
 
     
-    Dann erhalten wir:
-        $$\ket{x} \Rightarrow E(x) = \bra{x}M\ket{x} $$
-
 
 \end{frame}
