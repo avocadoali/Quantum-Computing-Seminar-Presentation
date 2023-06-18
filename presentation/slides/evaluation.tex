@@ -1,0 +1,173 @@
+\section{Evaluierung}
+
+\subsubsection{Laufzeit}
+\begin{frame}
+    \frametitle{Laufzeit}
+
+    \textbf{Gauß Verfahren}
+
+    $$ \mathcal{O}( N^3 ) $$
+
+    \begin{itemize}
+        \item nicht der schnellste Algorithmus
+        \item selben constraints sind zu beachten!! 
+    \end{itemize}
+
+\end{frame}
+
+
+\subsubsection{Laufzeit}
+\begin{frame}
+    \frametitle{Laufzeit}
+    \begin{columns}[c]
+        \begin{column}{0.5\hsize}
+            \textbf{Classical}
+
+            \hfil
+
+            Conjugate gradient descent 
+
+            $$ \mathcal{O}(\kappa s log{\left(\frac 1 \epsilon\right)} N ) $$
+
+
+            \hfil
+
+            \begin{itemize}
+            \item $N :=$ is number of variables in linear system
+            \item $\kappa= \frac {\lambda_{max}} {\lambda_{min}}$:  condition number
+            \end{itemize}
+
+        \end{column}
+        
+
+        \begin{column}{0.5\hsize}
+            \textbf{Quanten Version}
+
+            \hfil
+
+            HHL
+
+            $$ \mathcal{O}(\frac{\kappa^2s^2}{\epsilon}logN) $$
+
+            \hfil
+
+            \begin{itemize}
+            \item $\epsilon$ := is the accuracy                                                            
+            \item $s$ := is s-sparse matrix: each row has at most s nonzero entries
+            \end{itemize}
+
+        \end{column}
+    \end{columns}
+ 
+    \hfil
+
+
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Laufzeit}
+    \begin{columns}[c]
+        \begin{column}{0.5\hsize}
+            \textbf{Classical}
+
+            \hfil
+
+            Conjugate gradient descent 
+
+            $$ \mathcal{O}(\kappa s log{\left(\frac 1 \epsilon\right)} N ) $$
+
+            $$ \Rightarrow \mathcal{O} (N) $$
+
+        \end{column}
+        
+
+        \begin{column}{0.5\hsize}
+            \textbf{Quanten Version}
+
+            \hfil
+
+            HHL
+
+            $$ \mathcal{O}(\frac{\kappa^2s^2}{\epsilon}logN) $$
+
+            $$ \Rightarrow \mathcal{O} (log(N)) $$
+        \end{column}
+
+    \end{columns}
+ 
+    \hfil
+
+    \hfil
+
+    \textbf{Takeaway}
+    \begin{itemize}
+        \item exponential speed up $\mathcal{O} (N)$ vs $\mathcal{O} (log(N))$
+        \item klassischer algorithmus hat bessere Fehlerabhängigkeit: \\$log(\frac1{\epsilon})$ vs $\frac{1}{\epsilon}$
+    \end{itemize}
+
+
+\end{frame}
+
+
+
+\subsubsection{Einschränkungen}
+\begin{frame}
+    \frametitle{Einschränkungen}
+    \begin{enumerate}
+        \item einfache Zustandsvorbereitung des Vektors $\vec b$ zum Quantenzustand $\ket{b}$
+
+        \hfil
+
+        \item niedrige condition number $\kappa$ 
+
+        \hfil
+
+
+        \item und muss s-sparse sein
+
+        \hfil
+
+
+        \item nicht jeder Eintrag von $\ket{x}$ auslesbar
+
+        \hfil
+
+
+        \item Der Ressourcenbedarf sehr hoch
+
+
+    \end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Einschränkungen}
+    \begin{enumerate}
+        \item niedrige condition number $\kappa$ 
+
+        \item muss s-sparse sein
+
+        \item einfache Zustandsvorbereitung des Vektors $\vec b$ zum Quantenzustand $\ket{b}$
+            \begin{itemize}
+                \item wenn man $\ket{b}$ klassisch lesen/schreiben muss, ist der Geschwindigkeitsgewinn weg, da $\ket{b}$ $N$ Einträge hat→ qram
+            \end{itemize}
+        \item nicht jeder Eintrag von $\ket{x}$ auslesbar
+            \begin{itemize}
+                \item Nachbearbeitung muss erfolgen
+                \item nur $log_2(n)$ Qubits -> nur eine Näherung
+                \item statistische Informationen möglich (Verhältnis, Bereiche großer Einträge, ...)
+            \end{itemize}
+ 
+        \item Der Ressourcenbedarf sehr hoch
+            \begin{itemize}
+                \item Shors Algorithmus ist dem HHL-Algorithmus sehr ähnlich (aufgrund von QPE)
+                \item untere Grenze von 4000 logischen Qubits (2048bit RSA)
+                \item d.h. millionen physikalischer Qubits (für Fehlerkorrektur)
+            \end{itemize}
+    \end{enumerate}
+
+\end{frame}
+
