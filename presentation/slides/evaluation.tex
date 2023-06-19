@@ -29,6 +29,7 @@
 
             $$ \mathcal{O}(\kappa s log{\left(\frac 1 \epsilon\right)} N ) $$
 
+            $$ \Rightarrow \mathcal{O} (N) $$
 
             \hfil
 
@@ -48,12 +49,12 @@
             HHL
 
             $$ \mathcal{O}(\frac{\kappa^2s^2}{\epsilon}logN) $$
-
+            $$ \Rightarrow \mathcal{O} (log(N)) $$
             \hfil
 
             \begin{itemize}
             \item $\epsilon$ := Fehler des Ergebnisses
-            \item $s$ := is s-sparse Matrix: jede Zeile hat max. s Einträge
+            \item $s$ := s-sparse Matrix: jede Zeile hat max. s Einträge
             \end{itemize}
 
         \end{column}
@@ -116,9 +117,6 @@
 \begin{frame}
     \frametitle{Einschränkungen}
     \begin{enumerate}
-        \item einfache Zustandsvorbereitung des Vektors $\vec b$ zum Quantenzustand $\ket{b}$
-
-        \hfil
 
         \item niedrige condition number $\kappa$ 
 
@@ -129,45 +127,13 @@
 
         \hfil
 
-
         \item nicht jeder Eintrag von $\ket{x}$ auslesbar
 
         \hfil
 
-
-        \item Der Ressourcenbedarf sehr hoch
-
-
-    \end{enumerate}
-
-\end{frame}
-
-
-\begin{frame}
-    \frametitle{Einschränkungen}
-    \begin{enumerate}
-        \item niedrige condition number (es ist außerdem nicht einfach $\kappa$ im vorhinein zu ermitteln)
-
-        \item muss s-sparse sein
-
         \item einfache Zustandsvorbereitung des Vektors $\vec b$ zum Quantenzustand $\ket{b}$
-            \begin{itemize}
-                \item wenn man $\ket{b}$ klassisch lesen/schreiben muss, ist der Geschwindigkeitsgewinn weg, da $\ket{b}$ $N$ Einträge hat→ qram
-            \end{itemize}
-        \item nicht jeder Eintrag von $\ket{x}$ auslesbar
-            \begin{itemize}
-                \item Nachbearbeitung muss erfolgen
-                \item nur $log_2(n)$ Qubits -> nur eine Näherung
-                \item statistische Informationen möglich (Verhältnis, Bereiche großer Einträge, ...)
-            \end{itemize}
- 
-        \item Der Ressourcenbedarf sehr hoch
-            \begin{itemize}
-                \item Shors Algorithmus ist dem HHL-Algorithmus sehr ähnlich (aufgrund von QPE)
-                \item untere Grenze von 4000 logischen Qubits (2048bit RSA)
-                \item d.h. millionen physikalischer Qubits (für Fehlerkorrektur)
-            \end{itemize}
-    \end{enumerate}
 
-\end{frame}
+        \hfil
 
+        \item Der Ressourcenbedarf ist hoch
+\end{enumerate} \end{frame}

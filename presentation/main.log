@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.13)  19 JUN 2023 21:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.13)  19 JUN 2023 22:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -724,17 +724,17 @@ Overfull \vbox (9.68411pt too high) detected at line 31
 
 ] [13
 
-] [14
-
 ]
-<img/example_circuit/example_circuit.jpg, id=139, 963.6pt x 542.025pt>
+<img/example_circuit/example_circuit.jpg, id=134, 963.6pt x 542.025pt>
 File: img/example_circuit/example_circuit.jpg Graphic file (type jpg)
 <use img/example_circuit/example_circuit.jpg>
-Package pdftex.def Info: img/example_circuit/example_circuit.jpg  used on input line 125.
+Package pdftex.def Info: img/example_circuit/example_circuit.jpg  used on input line 114.
 (pdftex.def)             Requested size: 298.75394pt x 168.04254pt.
- [15
+ [14
 
- <./img/example_circuit/example_circuit.jpg>]
+ <./img/example_circuit/example_circuit.jpg>] [15
+
+]
 <img/example_circuit/example_circuit_1.jpg, id=145, 963.6pt x 542.025pt>
 File: img/example_circuit/example_circuit_1.jpg Graphic file (type jpg)
 <use img/example_circuit/example_circuit_1.jpg>
@@ -749,7 +749,7 @@ File: img/example_circuit/example_circuit_2.jpg Graphic file (type jpg)
 Package pdftex.def Info: img/example_circuit/example_circuit_2.jpg  used on input line 152.
 (pdftex.def)             Requested size: 298.75394pt x 168.04254pt.
 
-Overfull \vbox (4.01576pt too high) detected at line 152
+Overfull \vbox (3.48718pt too high) detected at line 152
  []
 
 [17
@@ -788,13 +788,9 @@ Overfull \vbox (3.92517pt too high) detected at line 186
 
 ] [26
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 172.
- (/usr/share/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-) [27
+]) (./slides/practical_applications_outlooks.tex (./main.toc) [27
 
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) (./slides/practical_applications_outlooks.tex (./main.toc) [28
+] [28
 
 ] [29
 
@@ -803,8 +799,6 @@ File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 ] [31
 
 ] [32
-
-] [33
 
 ])
 \tf@nav=\write6
@@ -821,18 +815,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D0694A0006B28FD09BAEA9A11487F0EE;594.
  ) 
 Here is how much of TeX's memory you used:
- 21887 strings out of 476025
- 423064 string characters out of 5796532
+ 21862 strings out of 476025
+ 422274 string characters out of 5796532
  1861388 words of memory out of 5000000
- 41780 multiletter control sequences out of 15000+600000
- 523466 words of font info for 72 fonts, out of 8000000 for 9000
+ 41762 multiletter control sequences out of 15000+600000
+ 523125 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,12n,122p,472b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb>
-Output written on main.pdf (33 pages, 388301 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (32 pages, 383896 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 252 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 500000)
  108 words of extra memory for PDF output out of 10000 (max. 10000000)
 

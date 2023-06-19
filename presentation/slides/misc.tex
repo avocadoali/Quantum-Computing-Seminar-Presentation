@@ -401,3 +401,32 @@
 
 \end{frame}
 
+
+\begin{frame}
+    \frametitle{Einschränkungen}
+    \begin{enumerate}
+        \item niedrige condition number (es ist außerdem nicht einfach $\kappa$ im vorhinein zu ermitteln)
+
+        \item muss s-sparse sein
+
+        \item einfache Zustandsvorbereitung des Vektors $\vec b$ zum Quantenzustand $\ket{b}$
+            \begin{itemize}
+                \item wenn man $\ket{b}$ klassisch lesen/schreiben muss, ist der Geschwindigkeitsgewinn weg, da $\ket{b}$ $N$ Einträge hat→ qram
+            \end{itemize}
+        \item nicht jeder Eintrag von $\ket{x}$ auslesbar
+            \begin{itemize}
+                \item Nachbearbeitung muss erfolgen
+                \item nur $log_2(n)$ Qubits -> nur eine Näherung
+                \item statistische Informationen möglich (Verhältnis, Bereiche großer Einträge, ...)
+            \end{itemize}
+ 
+        \item Der Ressourcenbedarf sehr hoch
+            \begin{itemize}
+                \item Shors Algorithmus ist dem HHL-Algorithmus sehr ähnlich (aufgrund von QPE)
+                \item untere Grenze von 4000 logischen Qubits (2048bit RSA)
+                \item d.h. millionen physikalischer Qubits (für Fehlerkorrektur)
+            \end{itemize}
+    \end{enumerate}
+
+\end{frame}
+
