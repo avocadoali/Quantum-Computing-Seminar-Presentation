@@ -138,29 +138,6 @@
 \end{frame}
 
 
-
-
-\begin{frame}
-    \frametitle{Quantum Phase Estimation}
-    
-    Wir führen QPE aus:
-    $$\ket{\Psi_2} = \ket{b}_b \ket{\widetilde{\lambda_j}}_c\ket{0}_a$$
-
-    $$=\left(-\frac{1}{\sqrt{2}} \ket{u_0} \ket{01} +\frac{1}{\sqrt{2}}  
-    \ket{u_1} \ket{10} \right)  \ket{0}$$
-
-    \hfil
-
-    \hfil
-
-    \begin{itemize}
-    \item b-register: Zustand $\ket{b}$ in Eigenbasis von A: $ \ket{u_0}$ or $\ket{u_1}$
-    \item jeweilige Koeffizienten: $b_0 =\frac{-1}{\sqrt{2}}$ and  $b_1 =\frac{1}{\sqrt{2}}$
-    \item c-register: Eigenwerte $\ket{\widetilde{\lambda}_0}$ und $\ket{\widetilde{\lambda}_1}$ enkodiert als  $\ket{01}$ und $\ket{10}$
-    \item a-register: ancilla Qubit $\ket{0}$ 
-    \end{itemize}
-\end{frame}
-
 \begin{frame}
     \frametitle{Quantum Phase Estimation}
     \begin{center}
@@ -185,7 +162,7 @@
     \hfil
 
     Wir gehen davon aus, dass wir $\ket{1}$ messen.
-    $$  \ket{\Psi_3} =\sqrt{\frac{8}{5}}\left(-\frac{1}{\sqrt{2}} \ket{u_0}\ket{01}\ket{1} +\frac{1}{2\sqrt{2}} \ket{u_1} \ket{10}\right)\ket{1}_a$$
+    $$  \ket{\Psi_3} =\sqrt{\frac{8}{5}}\left(-\frac{1}{\sqrt{2}} \ket{u_0}_b\ket{01}_c +\frac{1}{2\sqrt{2}} \ket{u_1}_b\ket{10}_c\right)\ket{1}_a $$
 \end{frame}
 
 \begin{frame}
@@ -197,37 +174,15 @@
     $$ \ket{\Psi_3} =\sqrt{\frac{8}{5}}\left(-\frac{1}{\sqrt{2}} \ket{u_0}\ket{01}\ket{1} +\frac{1}{2\sqrt{2}} \ket{u_1} \ket{10}\right)\ket{1}_a$$
 \end{frame}
 
-
 \begin{frame}
     \frametitle{Inverse Quantum Phase Estimation}
-
-    Wir führen IQPE aus:
-    $$\ket{\Psi_4}= \ket{x}_b \ket{00}_c \ket{1}_a $$
-    $$ \ket{x}_b =  A^{-1} \ket{b} = 
-    \sum_{i=0}^{2^{1}-1} 
-    \lambda_i^{-1} b_i\ket{u_i} $$
-    $$\ket{\Psi_4}=\frac{2}{3}\sqrt{\frac{8}{5}} \left( -\frac{1}{\frac{2}{3}\sqrt{2}} \ket{u_0} +\frac{1}   {\frac{4}{3}\sqrt{2}}  \ket{u_1}\right)  \ket{00}_b \ket{1}_a $$
-
-    \hfil
-
-    Wir erinnern uns an unsere Eigenvektoren:
-    \begin{itemize}
-        \item $ \ket{u_0} = \frac{-1}{\sqrt{2}}\ket{0} + \frac{-1}{\sqrt{2}}\ket{1}$ 
-        \item $ \ket{u_1}= \frac{-1}{\sqrt{2}}\ket{0} + \frac{1}{\sqrt{2}}\ket{1}$ 
-    \end{itemize}
-
-    $$ \ket{\Psi_4}= \left(\frac{1}{2}\sqrt{\frac{2}{5}} \ket{0} +\frac{1}{2}\sqrt{\frac{2}{5}} * 3 \ket{1} \right) \ket{00}_b \ket{1}_a $$
-
-\end{frame}
-
-\begin{frame}
-    \frametitle{Ancilla Roation - Eigenwerte invertieren}
     \begin{center}
     \includegraphics[width=10.5cm]{img/example_circuit/example_circuit_4.jpg}
     \end{center}
 
 Wir erhalten:
-$$ \ket{\Psi_4}= \left(\frac{1}{2}\sqrt{\frac{2}{5}} \ket{0} +\frac{1}{2}\sqrt{\frac{2}{5}} * 3 \ket{1} \right) \ket{00}_b \ket{1}_a$$
+$$\ket{\Psi_4}= \ket{x}_b \ket{00}_c \ket{1}_a $$
+$$ \ket{\Psi_4}=\frac{1}{2}\sqrt{\frac{2}{5}}  \left(\ket{0} +3 \ket{1} \right) \ket{00}_b \ket{1}_a$$
 \end{frame}
 
 
@@ -246,14 +201,6 @@ Das Verhältnis im b-Register ist wie erwartet $1:9$.
 
 
 
-\begin{frame}
-    \frametitle{Gesamte Rechnung}
-    \begin{center}
-    \includegraphics[width=10.5cm]{img/example_circuit/example_circuit_5.jpg}
-    \end{center}
-
-
-\end{frame}
 
 
 

@@ -1286,11 +1286,6 @@ INPUT ./img/example_circuit/example_circuit_4.jpg
 INPUT img/example_circuit/example_circuit_4.jpg
 INPUT ./img/example_circuit/example_circuit_4.jpg
 INPUT ./img/example_circuit/example_circuit_4.jpg
-INPUT ./img/example_circuit/example_circuit_5.jpg
-INPUT ./img/example_circuit/example_circuit_5.jpg
-INPUT img/example_circuit/example_circuit_5.jpg
-INPUT ./img/example_circuit/example_circuit_5.jpg
-INPUT ./img/example_circuit/example_circuit_5.jpg
 INPUT ./slides/evaluation.tex
 INPUT slides/evaluation.tex
 INPUT ./slides/evaluation.tex
