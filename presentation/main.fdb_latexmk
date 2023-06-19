@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1687186611 "/home/ali/tum/seminar/Quantum-Computing-Seminar-Presentation/presentation/main.tex" "main.pdf" "main" 1687186612 0
-  "/home/ali/tum/seminar/Quantum-Computing-Seminar-Presentation/presentation/main.tex" 1687186609 1250 486da254915cb050e8ed4ab5fae61dcb ""
+["pdflatex"] 1687189807 "/home/ali/tum/seminar/Quantum-Computing-Seminar-Presentation/presentation/main.tex" "main.pdf" "main" 1687189808 0
+  "/home/ali/tum/seminar/Quantum-Computing-Seminar-Presentation/presentation/main.tex" 1687188301 1205 102a5d5527fc465f3f26a51e8927e747 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1680514707 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1680514707 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcss1000.tfm" 1680514707 1536 293044035fd171bb1d18cf655049b101 ""
@@ -209,17 +209,15 @@
   "img/example_circuit/example_circuit_3.jpg" 1687130383 50781 00d37f5e611790e68c26f8841af3cb42 ""
   "img/example_circuit/example_circuit_4.jpg" 1687130395 52912 28c2e89f3924396c53259eda395fb89b ""
   "img/example_circuit/example_circuit_5.jpg" 1687130410 52364 9ace46ac1199fe163df13d5ded53e0c3 ""
-  "img/hhl_circuit/hhl_circuit.jpg" 1687120970 31627 e72b2da0feaf1db1fae9fae84e8a7faa ""
-  "main.aux" 1687186612 8489 b87a9aecac705ff5933a157bb5e33ed1 "pdflatex"
-  "main.nav" 1687186612 5437 48364b273b29e71e9b0f6657caff3180 "pdflatex"
-  "main.out" 1687186612 760 5276cc8e86abee33408130e3dea0d4f2 "pdflatex"
-  "main.tex" 1687186609 1250 486da254915cb050e8ed4ab5fae61dcb ""
-  "main.toc" 1687186612 319 b6d4345aed8bde35fd01cb72d3d1829a "pdflatex"
-  "slides/easy_example.tex" 1687186288 7901 1325e43d287f300aa6dd3c79e69402c8 ""
+  "main.aux" 1687189808 6888 5fd5bd4607101e100d8b9a1d2eec657f "pdflatex"
+  "main.nav" 1687189808 4329 0b1d973c741e9837b6719ede1ada8673 "pdflatex"
+  "main.out" 1687189808 594 d0694a0006b28fd09baea9a11487f0ee "pdflatex"
+  "main.tex" 1687188301 1205 102a5d5527fc465f3f26a51e8927e747 ""
+  "main.toc" 1687189808 258 caf9f85a2fef3b985f238338d8cb397e "pdflatex"
+  "slides/easy_example.tex" 1687189807 7607 6ddedd8c906af6d3b6f55ea7d228818f ""
   "slides/evaluation.tex" 1687122460 3923 41dab5d4f2a4e5635218683fa143a860 ""
-  "slides/hhl_algorithm.tex" 1687129764 2246 51603b67fa48980da94b01e7b42e9403 ""
+  "slides/hhl_algorithm.tex" 1687188904 1636 1cd64b4f6a0cea13f71c43785f7e8e9a ""
   "slides/introduction.tex" 1687129210 1699 0b09ee3ed14b7471a6630c00f61ba3e3 ""
-  "slides/mathematical_background.tex" 1687129132 2802 03c6879d2df6a10c37b8f39c74d63e73 ""
   "slides/practical_applications_outlooks.tex" 1687114542 2471 c643aadee78196adb64a21da14be9aea ""
   (generated)
   "main.aux"

@@ -1233,13 +1233,6 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
-INPUT ./slides/mathematical_background.tex
-INPUT ./slides/mathematical_background.tex
-INPUT ./slides/mathematical_background.tex
-INPUT ./slides/mathematical_background.tex
-INPUT ./main.toc
-INPUT main.toc
-INPUT main.toc
 INPUT ./slides/hhl_algorithm.tex
 INPUT ./slides/hhl_algorithm.tex
 INPUT ./slides/hhl_algorithm.tex
@@ -1261,11 +1254,6 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
-INPUT ./img/hhl_circuit/hhl_circuit.jpg
-INPUT ./img/hhl_circuit/hhl_circuit.jpg
-INPUT img/hhl_circuit/hhl_circuit.jpg
-INPUT ./img/hhl_circuit/hhl_circuit.jpg
-INPUT ./img/hhl_circuit/hhl_circuit.jpg
 INPUT ./slides/easy_example.tex
 INPUT ./slides/easy_example.tex
 INPUT ./slides/easy_example.tex
