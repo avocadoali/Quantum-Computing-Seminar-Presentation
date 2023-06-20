@@ -72,7 +72,7 @@
 \begin{frame}
     \frametitle{Einfach Beispiel}
 
-    Eigenvektoren von $A$ sind:    
+    Eigenvon $A$ sind:    
     \begin{columns}[c]
         \begin{column}{0.5\hsize}\centering
             $$\lambda_0 = \frac{2}{3}$$
@@ -88,6 +88,15 @@
     \hfil
 
 \onslide<2,3>{
+Enkodierungsschema:
+$$\widetilde{\lambda_j} = N\lambda_jt/2\pi$$
+}
+
+    \hfil
+
+    \hfil
+
+\onslide<3>{
     Einkodiert:
     \begin{columns}[c]
         \begin{column}{0.5\hsize}\centering
@@ -101,16 +110,6 @@
         \end{column}
     \end{columns}
 }
-
-    \hfil
-
-    \hfil
-
-\onslide<3>{
-Enkodierungsschema:
-$$\widetilde{\lambda_j} = N\lambda_jt/2\pi$$
-}
-
 
 \end{frame}
 
@@ -171,18 +170,23 @@ $$\widetilde{\lambda_j} = N\lambda_jt/2\pi$$
 
 \begin{frame}
     \frametitle{Ancilla Roation - Eigenwerte invertieren}
-    Wir invertieren das Ancilla Qubit:
+
+\onslide<2,3>{
+    Wir rotieren das Ancilla Qubit:
     $$ \ket{\Psi_3} = \sum_{j=0}^{2^{1}-1} b_j \ket{u_j} \ket{\widetilde{\lambda}_j} \left(\sqrt{1-\frac{C^2}{\widetilde{\lambda}_j^2}}\ket{0} + \frac{C}{\widetilde{\lambda}_j} \ket{1}\right)$$
     %$$=-\frac{1}{\sqrt{2}} \ket{u_0} \ket{01}\left(\sqrt{1-\frac{1}{1^2}}\ket{0} + \frac{1}{1} \ket{1}\right) +\frac{1}{\sqrt{2}}  \ket{u_1} \ket{10} \left(\sqrt{1-\frac{1}{2^2}}\ket{0} + \frac{1}{2} \ket{1}\right)$$
     %$$=\left(-\frac{1}{\sqrt{2}} \ket{u_0} \ket{01}\left(\ket{0} +\ket{1}\right)+\frac{1}{\sqrt{2}} \ket{u_1} \ket{10}\right)\left(\sqrt{1-\frac{1}{4}}\ \ket{0} + \frac{1}{2} \ket{1}\right)$$
-
+}
 
     \hfil
 
+    
+\onslide<3>{
     Wir gehen davon aus, dass wir $\ket{1}$ messen.
     $$  \ket{\Psi_3} =\sqrt{\frac{8}{5}}\left(\frac {1} {\widetilde{\lambda_0}} *-\frac{1}{\sqrt{2}} \ket{u_0}_b\ket{01}_c +\frac{1}{\widetilde{\lambda_1}}*\frac{1}{\sqrt{2}} \ket{u_1}_b\ket{10}_c\right)\ket{1}_a $$
     
     $$  \ket{\Psi_3} =\sqrt{\frac{8}{5}}\left(-\frac{1}{\sqrt{2}} \ket{u_0}_b\ket{01}_c +\frac{1}{2\sqrt{2}} \ket{u_1}_b\ket{10}_c\right)\ket{1}_a $$
+}
 \end{frame}
 
 \begin{frame}
