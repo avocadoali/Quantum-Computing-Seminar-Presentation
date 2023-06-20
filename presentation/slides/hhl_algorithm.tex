@@ -7,24 +7,26 @@
 
 Unser Ziel:
 $$\ket{x} = A^{-1}\ket{b}$$
-
-Wenn $A=A^\dagger$: 
+\onslide<2,3,4>{Wenn $A=A^\dagger$: 
 $$\ket{x} = e^{-iAt} \ket{b}$$
 
-Wenn $A\neq A^\dagger$: 
+}
+\onslide<3,4>{Wenn $A\neq A^\dagger$: 
     $$A \vec{x} = \vec{b}$$
     $$\begin{pmatrix} 0 & A \\ \overline {A^T} & 0 \end{pmatrix} 
     \begin{pmatrix} 0 \\ \vec{x}  \end{pmatrix}
     =
     \begin{pmatrix} \vec{b} \\ 0 \end{pmatrix} $$
 
-Wir können A diagonalisieren
+}
+\onslide<4>{Wir können A diagonalisieren
     $$A = U \begin{pmatrix} \lambda_1 & 0 & 0\\ 0 & ... & 0\\ 0 & 0& \lambda_n \\ \end{pmatrix} U^T$$
 
     $$ \Rightarrow A^{-1}=  U^T 
     \begin{pmatrix} \lambda_1^{-1} & 0 & 0\\ 0 & ... & 0\\ 0 & 0& \lambda_n^{-1} \\ \end{pmatrix}
     U$$
 
+}
 \end{frame}
 
 
@@ -34,7 +36,7 @@ Wir können A diagonalisieren
     \frametitle{Der Algorithmus}
 
         \textbf{Ablauf}
-        \begin{enumerate}
+        \begin{enumerate}[<+->]
             \item State Preparation
             \begin{itemize}
                 \item Enkodiert Vektor und Matrix in Quanten Computer

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.13)  20 JUN 2023 17:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.4.13)  20 JUN 2023 17:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -718,7 +718,7 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
 ] [12
 
-]) (./slides/easy_example.tex (./main.toc) [13
+] [13
 
 ] [14
 
@@ -726,61 +726,23 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
 ] [16
 
-]
-<img/example_circuit/example_circuit.jpg, id=149, 963.6pt x 542.025pt>
-File: img/example_circuit/example_circuit.jpg Graphic file (type jpg)
-<use img/example_circuit/example_circuit.jpg>
-Package pdftex.def Info: img/example_circuit/example_circuit.jpg  used on input line 114.
-(pdftex.def)             Requested size: 298.75394pt x 168.04254pt.
- [17
+] [17
 
- <./img/example_circuit/example_circuit.jpg>] [18
+] [18
 
-]
-<img/example_circuit/example_circuit_1.jpg, id=161, 963.6pt x 542.025pt>
-File: img/example_circuit/example_circuit_1.jpg Graphic file (type jpg)
-<use img/example_circuit/example_circuit_1.jpg>
-Package pdftex.def Info: img/example_circuit/example_circuit_1.jpg  used on input line 138.
-(pdftex.def)             Requested size: 298.75394pt x 168.04254pt.
- [19
+] [19
 
- <./img/example_circuit/example_circuit_1.jpg>]
-<img/example_circuit/example_circuit_2.jpg, id=168, 963.6pt x 542.025pt>
-File: img/example_circuit/example_circuit_2.jpg Graphic file (type jpg)
-<use img/example_circuit/example_circuit_2.jpg>
-Package pdftex.def Info: img/example_circuit/example_circuit_2.jpg  used on input line 152.
-(pdftex.def)             Requested size: 298.75394pt x 168.04254pt.
+] [20
 
-Overfull \vbox (3.48718pt too high) detected at line 152
- []
+] [21
 
-[20
+] [22
 
- <./img/example_circuit/example_circuit_2.jpg>] [21
+] [23
 
-]
-<img/example_circuit/example_circuit_3.jpg, id=179, 963.6pt x 542.025pt>
-File: img/example_circuit/example_circuit_3.jpg Graphic file (type jpg)
-<use img/example_circuit/example_circuit_3.jpg>
-Package pdftex.def Info: img/example_circuit/example_circuit_3.jpg  used on input line 175.
-(pdftex.def)             Requested size: 298.75394pt x 168.04254pt.
- [22
+] [24
 
- <./img/example_circuit/example_circuit_3.jpg>]
-<img/example_circuit/example_circuit_4.jpg, id=185, 963.6pt x 542.025pt>
-File: img/example_circuit/example_circuit_4.jpg Graphic file (type jpg)
-<use img/example_circuit/example_circuit_4.jpg>
-Package pdftex.def Info: img/example_circuit/example_circuit_4.jpg  used on input line 186.
-(pdftex.def)             Requested size: 298.75394pt x 168.04254pt.
-
-Overfull \vbox (3.92517pt too high) detected at line 186
- []
-
-[23
-
- <./img/example_circuit/example_circuit_4.jpg>] [24
-
-]) (./slides/evaluation.tex (./main.toc) [25
+]) (./slides/easy_example.tex (./main.toc) [25
 
 ] [26
 
@@ -790,17 +752,117 @@ Overfull \vbox (3.92517pt too high) detected at line 186
 
 ] [29
 
-]) (./slides/practical_applications_outlooks.tex (./main.toc) [30
+] [30
 
 ] [31
 
-] [32
+]
+<img/example_circuit/example_circuit.jpg, id=228, 963.6pt x 542.025pt>
+File: img/example_circuit/example_circuit.jpg Graphic file (type jpg)
+<use img/example_circuit/example_circuit.jpg>
+Package pdftex.def Info: img/example_circuit/example_circuit.jpg  used on input line 119.
+(pdftex.def)             Requested size: 298.75394pt x 168.04254pt.
+ [32
 
-] [33
+ <./img/example_circuit/example_circuit.jpg>] [33
 
-] [34
+]
+<img/example_circuit/example_circuit_1.jpg, id=239, 963.6pt x 542.025pt>
+File: img/example_circuit/example_circuit_1.jpg Graphic file (type jpg)
+<use img/example_circuit/example_circuit_1.jpg>
+Package pdftex.def Info: img/example_circuit/example_circuit_1.jpg  used on input line 143.
+(pdftex.def)             Requested size: 298.75394pt x 168.04254pt.
+ [34
 
-] [35
+ <./img/example_circuit/example_circuit_1.jpg>]
+<img/example_circuit/example_circuit_2.jpg, id=245, 963.6pt x 542.025pt>
+File: img/example_circuit/example_circuit_2.jpg Graphic file (type jpg)
+<use img/example_circuit/example_circuit_2.jpg>
+Package pdftex.def Info: img/example_circuit/example_circuit_2.jpg  used on input line 157.
+(pdftex.def)             Requested size: 298.75394pt x 168.04254pt.
+
+Overfull \vbox (3.48718pt too high) detected at line 157
+ []
+
+[35
+
+ <./img/example_circuit/example_circuit_2.jpg>] [36
+
+]
+<img/example_circuit/example_circuit_3.jpg, id=256, 963.6pt x 542.025pt>
+File: img/example_circuit/example_circuit_3.jpg Graphic file (type jpg)
+<use img/example_circuit/example_circuit_3.jpg>
+Package pdftex.def Info: img/example_circuit/example_circuit_3.jpg  used on input line 180.
+(pdftex.def)             Requested size: 298.75394pt x 168.04254pt.
+ [37
+
+ <./img/example_circuit/example_circuit_3.jpg>]
+<img/example_circuit/example_circuit_4.jpg, id=263, 963.6pt x 542.025pt>
+File: img/example_circuit/example_circuit_4.jpg Graphic file (type jpg)
+<use img/example_circuit/example_circuit_4.jpg>
+Package pdftex.def Info: img/example_circuit/example_circuit_4.jpg  used on input line 191.
+(pdftex.def)             Requested size: 298.75394pt x 168.04254pt.
+
+Overfull \vbox (3.92517pt too high) detected at line 191
+ []
+
+[38
+
+ <./img/example_circuit/example_circuit_4.jpg>] [39
+
+]) (./slides/evaluation.tex (./main.toc) [40
+
+] [41
+
+] [42
+
+] [43
+
+] [44
+
+] [45
+
+] [46
+
+] [47
+
+] [48
+
+] [49
+
+] [50
+
+] [51
+
+] [52
+
+]) (./slides/practical_applications_outlooks.tex (./main.toc) [53
+
+] [54
+
+] [55
+
+] [56
+
+] [57
+
+] [58
+
+] [59
+
+] [60
+
+] [61
+
+] [62
+
+] [63
+
+] [64
+
+] [65
+
+] [66
 
 ])
 \tf@nav=\write6
@@ -817,18 +879,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D0694A0006B28FD09BAEA9A11487F0EE;594.
  ) 
 Here is how much of TeX's memory you used:
- 21869 strings out of 476025
- 422346 string characters out of 5796532
- 1861388 words of memory out of 5000000
- 41763 multiletter control sequences out of 15000+600000
+ 21932 strings out of 476025
+ 422950 string characters out of 5796532
+ 1862388 words of memory out of 5000000
+ 41764 multiletter control sequences out of 15000+600000
  523125 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,12n,122p,472b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,12n,122p,472b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (35 pages, 386447 bytes).
+Output written on main.pdf (66 pages, 420435 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
- 258 compressed objects within 3 object streams
- 76 named destinations out of 1000 (max. 500000)
+ 507 PDF objects out of 1000 (max. 8388607)
+ 400 compressed objects within 4 object streams
+ 138 named destinations out of 1000 (max. 500000)
  108 words of extra memory for PDF output out of 10000 (max. 10000000)
 

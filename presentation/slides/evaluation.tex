@@ -20,10 +20,10 @@
 \begin{frame}
     \frametitle{Laufzeit}
     \begin{columns}[c]
+
+
         \begin{column}{0.5\hsize}
             \textbf{Klassisch}
-
-            \hfil
 
             Conjugate gradient descent 
 
@@ -33,30 +33,32 @@
 
             \hfil
 
+\onslide<3>{
             \begin{itemize}
             \item $N :=$ Anzahl an unbekannten 
             \item $\kappa= \frac {\lambda_{max}} {\lambda_{min}}$:  condition number
             \end{itemize}
-
+}
         \end{column}
         
 
         \begin{column}{0.5\hsize}
             \textbf{Quanten Version}
 
-            \hfil
-
             HHL
 
+\onslide<2,3>{
             $$ \mathcal{O}(\frac{\kappa^2s^2}{\epsilon}logN) $$
             $$ \Rightarrow \mathcal{O} (log(N)) $$
+}
             \hfil
 
+\onslide<3>{
             \begin{itemize}
             \item $\epsilon$ := Fehler des Ergebnisses
             \item $s$ := s-sparse Matrix: jede Zeile hat max. s Einträge
             \end{itemize}
-
+}
         \end{column}
     \end{columns}
  
@@ -102,12 +104,14 @@
 
     \hfil
 
+
+\onslide<3>{
     \textbf{Takeaway}
     \begin{itemize}
         \item exponentialer speed up $\mathcal{O} (N)$ vs $\mathcal{O} (log(N))$
         \item klassischer algorithmus hat bessere Fehlerabhängigkeit: \\$log(\frac1{\epsilon})$ vs $\frac{1}{\epsilon}$
     \end{itemize}
-
+}
 
 \end{frame}
 
@@ -116,8 +120,7 @@
 %\subsubsection{Einschränkungen}
 \begin{frame}
     \frametitle{Einschränkungen}
-    \begin{enumerate}
-
+    \begin{enumerate}[<+->]
         \item niedrige condition number $\kappa$ 
 
         \hfil
